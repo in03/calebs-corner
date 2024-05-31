@@ -77,7 +77,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "giscus"
 
 [comments.disqusjs]
 shortname = ""
@@ -128,13 +128,13 @@ serverName = "cactus.chat"
 siteName = ""
 
 [comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
+repo = "in03/calebs-corner"
+repoID = "R_kgDOMCLuwQ"
+category = "Announcements"
+categoryID = "DIC_kwDOMCLuwc4CfwD2"
+mapping = "pathname"
+lightTheme = "noborder_light"
+darkTheme = "noborder_dark"
 reactionsEnabled = 1
 emitMetadata = 0
 
