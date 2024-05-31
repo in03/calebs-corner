@@ -55,9 +55,7 @@ What about some text to speech? We can pipe stdout to a text to speech engine. H
 >
 > It might be worth considering something a little more natural if you want it to read you bedtime stories. [Google text-to-speech](https://github.com/pndurette/gTTS) might be a better option.
 
-<audio controls preload="auto">
-    <source src="tts_limerick.wav">
-</audio>
+{{< audio src="tts_limerick.wav" >}}
 
 ### Calling in a Loop
 
@@ -107,10 +105,11 @@ You'll be greeted with the *mods.yml* file. Check out the APIs section. Mods sup
 > 📝 **Note...**
 >
 > Until today, I'd never tried Groq. Boy is it fast! Evidently, Groq provides [significantly faster inference](https://www.semianalysis.com/p/groq-inference-tokenomics-speed-but) through next-gen hardware: Language Processing Units (LPUs).
->
+> 
 > API access is free, at least for now. I couldn't find any official pricing anywhere. My guess is they're relying on the free access to spread the word so they sell their chips 🍟💲
 
 Check it out: [https://groq.com](https://groq.com/?ref=ghost.notablegravity.com)
+
 
 ```yaml
 # Default model (gpt-3.5-turbo, gpt-4, ggml-gpt4all-j...).
