@@ -2,7 +2,7 @@
 title: AI for the Shell
 description: Cross-platform, "pipable" AI directly in your terminal. Bring the power of LLMs to your local environment. ⚡️
 slug: ai-for-the-shell
-date: 2024-30-05 00:00:00+0000
+date: 2024-05-30 00:00:00+0000
 image: cover.jpg
 categories:
     - Showcase
