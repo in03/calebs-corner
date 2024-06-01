@@ -1,10 +1,22 @@
 ---
 title: About
 links:
-  - title: My GitHub
-    description: See all my current projects and contributions on GitHub
+  - title: GitHub
+    description: See what I'm building 🏗
     website: https://github.com/in03
     image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: LinkedIn
+    description: My LinkedIn profile 👨‍🏭
+    website: www.linkedin.com/in/caleb-trevatt-16217b102
+    image: linkedinlogo.png
+  - title: Dev.to
+    description: Sometimes I write articles here ✍
+    website: https://dev.to/in03
+    image: devtologo.png
+  - title: Hashnode
+    description: ... and here too! ✍
+    website: https://in03.hashnode.dev
+    image: hashnodelogo.png
 menu:
     main: 
         weight: 4
@@ -36,7 +48,7 @@ I'm currently based in [Brisbane, Queensland, Australia](https://duckduckgo.com/
 - 🎶 Musician
 - ✍ Writer
 
-### By day, I work as an *IT Systems Desktop Engineer*
+### By day, I work as an *IT Desktop Systems Engineer*
 
 I work in education. As part of a close-knit team, I trade hats in technical support (walk-ins, onsite and remote), but officially I **Manage Company Endpoints**.
 (I'm not allowed to use the term SOE anymore 😅).
@@ -47,6 +59,8 @@ My close friendship with the system administrator at work affords me the luxury 
 Inevitably, Linux, Docker, LXC, VMs, ZFS and high availability are conversational staples. Likely you'll see some related ramblings here!
 
 ### By night, I work on projects
+
+Here are some of the things I'm interested in working on:
 
 👐 **Open-source** 
 - I'm passionate about open-source. 
@@ -87,38 +101,14 @@ Inevitably, Linux, Docker, LXC, VMs, ZFS and high availability are conversationa
 - I enjoy hacking on mesh-networking with [Meshtastic](https://meshtastic.org)
 - A fellow mesher and I established a 24KM LOS link between two nodes!
 
-😶 **Self-Proclaimed Quirks**
-- I'm a pragmatist. Close enough is good enough. 
-  - E.g. self-hosting with dependency on Cloudflare
-  - "Good artwork is not finished, but abandoned"
-- Serial "premature optimisationalist"
-  - Need to plan more and code less
-  - Like my ducks in a row, often lacking ducks
-  - Perfectionism and pragmatism don't go together
-
+🤖 **AI:**
+- I am fascinated by AI 👀
+- I'm excited by the prospects of automation flexibility using AI
+- WIth my background in film, I love the development of generative AI in creative arts!
+- I've enoyed implementing cutting-edge AI solutions with LangChain, Flowise and GPTScript.
 
 **See more details on my projects [here](/projects)!**
 
-#### I ♥ anything distributed or decentralised
-
-- Performant distributed computing makes me happy (when it works) ⚡
-- I enjoy mesh-network hacking on Meshtastic with my cheeky LoRa radios 📡
-- Long-live self hosting! Thank you Proxmox, Ubuntu, Cloudflare and Tailscale 💻
-
-#### I am fascinated by AI 👀
-
-Long have I lived by the golden rule of automation:
-
-> *"Predictable outputs require consistent inputs"*
->
-> – Me I guess, but probably others too.
-
-No longer is such advice necessary with the advent of AI.
-I've enjoyed implementing cutting-edge AI solutions in automation workflows with LangChain, Flowise and GPTScript that can parse meaningful context from the worst inputs. Not a humble-brag... All thanks to the shoulders of giants before me.
-
-With a background in film and media, I'm drawn to the fusion of AI and creative expression in arts and interactive media. I love the way that AI is being used to generate and augment audio-visual content for creative expression. While it's a field I don't have as much time for as I used to, I'm always interested to learn more and try my hand at what I can.
-
 #### You too?
-
 I'm always on the look out for opportunities to collaborate with like-minded individuals on cool projects! ✨️
 If you're interested, hit me up on on one of my socials or add a comment here!
