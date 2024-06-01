@@ -22,3 +22,11 @@ url = "https://twitter.com/ctrevatt"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "rss"
+name = "RSS Feed"
+url = "/post/index.xml"
+
+[social.params]
+icon = "rss"
