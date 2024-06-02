@@ -31,10 +31,13 @@ EXPOSE 1313
 
 # [Optional] Uncomment this section to install additional OS packages you may want.
 
-RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends python3
+# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+#     && apt-get -y install --no-install-recommends <whatever packages>
 
-RUN pip install pre-commit
+# RUN apt-get update && apt-get -y install python3 python3-pip
+
+# RUN pip3 install --upgrade pip
+# RUN pip3 install pre-commit
 
 # [Optional] Uncomment if you want to install more global node packages
 # RUN sudo -u node npm install -g <your-package-list-here>
