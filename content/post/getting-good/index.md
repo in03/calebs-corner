@@ -1,6 +1,6 @@
 ---
 title: Getting Good where you're Not
-description: When, why and how to handle your personal weaknesses.
+description: When, why, and how to handle your personal weaknesses.
 slug: getting-good
 date: 2024-06-16 00:00:00+0000
 image: cover.jpg
@@ -50,7 +50,7 @@ Unlike Batman, I haven't been as successful.
 
 I don't want to just be okay at frontend dev, I want it to become a strength. So I muster inspiration, it becomes the focus, I form unrealistic expectations about my progress and I lose inspiration. Rinse and repeat.
 
-Instead I should let these weaknesses constrain me and redirect me in my strengths to where I *can* progress. Like gutter guards when bowling; feel the feedback, bounce back and keep moving forwards. Let your weaknesses provide you with **focus**.
+Instead I should let these weaknesses constrain me and redirect me in my strengths to where I *can* progress. Like gutter guards when bowling; feel the feedback, bounce back, and keep moving forwards. Let your weaknesses provide you with **focus**.
 
 ## When to Push
 
@@ -84,21 +84,21 @@ Some weaknesses are present because they are strengths in other areas. They exis
 
 Some things are a left-right brain tug-of-war and it's simply rare to be "ambidextrous" and have both. Check your weaknesses for corresponding strengths. Let those discoveries motivate you and inspire you and kick that imposter syndrome in the butt.
 
-Other things exist on that same spectrum and can be changed, but will cost you territory somewhere else. The strengths that make someone a great counsellor may have to be abandoned if you want to be a ring-in CEO who saves companies from the edge of bankruptcy.
+Other things exist on that same spectrum and can be changed, but will cost you territory somewhere else. The strengths that make someone a great counsellor may have to be abandoned if they want to be a ring-in CEO who saves companies from the edge of bankruptcy.
 
 But what about where you are ambidextrous? If you find something in yourself that is traditionally a rare coupling of strengths, use that in putting yourself that your counterparts are not. Got video-editing chops? Know how to code? How about use that to create dynamic, programmatically generated content!
 
 ## Augmenting Weakness
 
-Sometimes you just have to eat your vegetables and push through. You need to get familiar with an unintuitive process in a role that you otherwise enjoy. That doesn't mean you tap out and go on the hunt for your unicorn. But it doesn't mean you have to endure it vanilla either.
+Sometimes you just have to eat your vegetables and push through. You need to get familiar with an unintuitive process in a role that you otherwise enjoy. That doesn't mean you tap out and go on the hunt for your unicorn, but it doesn't mean you have to endure it vanilla either.
 
-Fortunately we live in the age of AI. GPT-4O, Copilot, Gemini and Claude are all advanced enough to search the internet and provide great answers for topics they may not even have training on. RAG is affordable and easy. Let AI be your tutor and translate obtuse documentation for you.
+Fortunately, we live in the age of AI. GPT-4O, Copilot, Gemini and Claude are all advanced enough to search the internet and provide great answers for topics they may not even have training on. RAG is affordable and easy. Let AI be your tutor and translate obtuse documentation for you.
 
 ### AI Tools
 
 I was messing around with Powershell Universal the other day (for some quick form validation with backend Active Directory commands. I spent a few hours over a week getting into the nitty gritty of form components and schemas.
 
-Out of curiosity, I tried asking GPT-4O to build me a form with my laundry list of fields and validations. To my surprise, it pumped out several hundred lines of code that only needed two adjustments to build and render successfully. I let it know and the successive built perfectly every time. Prompting with further changes became quicker than navigating the code and adjusting it by hand.
+Out of curiosity, I tried asking GPT-4O to build me a form with my laundry list of fields and validations. To my surprise, it pumped out several hundred lines of code that only needed two adjustments to build and render successfully. I let it know and the successive builds were perfect every time. Prompting with further changes became quicker than navigating the code and adjusting it by hand.
 
 Am I a frontend wizard now? Hardly. But it's an augmented weakness now. It gets the job done and it doesn't drain my mental capacity anymore. I can focus on what I'm good at.
 
@@ -156,6 +156,6 @@ Think about it yourself, if someone asked you if you "know a guy" in your tech c
 - Leverage modern tooling.
 - Actively involve yourself in modern community.
 
-Most importantly.
+Most importantly:
 
 Do you really need to learn Rust? Can you settle for Go?
