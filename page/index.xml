@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Caleb Trevatt</title><link>https://calebtrevatt.com/page/</link><description>Recent content in Pages on Caleb Trevatt</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://calebtrevatt.com/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://calebtrevatt.com/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/archives/</guid><description/></item><item><title>About</title><link>https://calebtrevatt.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/about/</guid><description>&lt;h1 id="hi--my-names-caleb">Hi! 👋 My name&amp;rsquo;s Caleb.
+&lt;/h1>&lt;p>&lt;strong>Welcome to my little corner of Cyberspace 💫&lt;/strong>&lt;/p>
+&lt;p>This is where I blog about my various projects, tinkerings and thoughts in technology – and some other stuff too!&lt;/p>
+&lt;p>In short, the musings of a &lt;strong>Battle Hardened Tech Noob 🤓💥&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://calebtrevatt.com/about/spaceme1.webp"
+width="1280"
+height="720"
+srcset="https://calebtrevatt.com/about/spaceme1_hu276c4775f0ea6bad4623fcdc949fd207_69906_480x0_resize_q75_h2_box_2.webp 480w, https://calebtrevatt.com/about/spaceme1_hu276c4775f0ea6bad4623fcdc949fd207_69906_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="I guess this is what Cyberspace looks like?"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;hr>
+&lt;h2 id="why-am-i-blogging">Why am I blogging?
+&lt;/h2>&lt;p>My hope is that it will allow me to &lt;a class="link" href="https://fs.blog/feynman-technique/" target="_blank" rel="noopener"
+>learn better&lt;/a>, teach better and find like-minded lads and lassies to collaborate with.&lt;/p>
+&lt;p>If I learn it and I like it, I&amp;rsquo;ll try to write about it here.&lt;/p>
+&lt;h2 id="who-am-i">Who am I?
+&lt;/h2>&lt;p>I&amp;rsquo;m Caleb Trevatt.&lt;/p>
+&lt;ul>
+&lt;li>I was born in &lt;a class="link" href="https://duckduckgo.com/?q=brisbane&amp;#43;queensland&amp;#43;australia&amp;amp;t=vivaldi&amp;amp;atb=v389-1&amp;amp;iaxm=directions&amp;amp;end=Brisbane&amp;amp;transport=walking" target="_blank" rel="noopener"
+>Brisbane, Queensland, Australia 🐨&lt;/a>.&lt;/li>
+&lt;li>I grew up in &lt;a class="link" href="https://duckduckgo.com/?q=bali&amp;amp;t=vivaldi&amp;amp;atb=v389-1&amp;amp;iaxm=directions&amp;amp;end=Bali&amp;amp;transport=walking" target="_blank" rel="noopener"
+>Bali, Indonesia 🇮🇩&lt;/a>.&lt;/li>
+&lt;li>I&amp;rsquo;m now based back &lt;a class="link" href="https://duckduckgo.com/?q=brisbane&amp;#43;queensland&amp;#43;australia&amp;amp;t=vivaldi&amp;amp;atb=v389-1&amp;amp;iaxm=directions&amp;amp;end=Brisbane&amp;amp;transport=walking" target="_blank" rel="noopener"
+>Down Under 🦘&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>I&amp;rsquo;m a son, husband and father. ✝👨‍👨‍👦&lt;/p>
+&lt;p>I&amp;rsquo;m also a &lt;a class="link" href="https://github.com/in03" target="_blank" rel="noopener"
+>Software Developer&lt;/a> 💾, &lt;a class="link" href="https://www.vu.edu.au/courses/certificate-iv-in-cyber-security-22603vic" target="_blank" rel="noopener"
+>Cybersecurity Student&lt;/a> 🔐, &lt;a class="link" href="https://vimeo.com/trevattpictures" target="_blank" rel="noopener"
+>Video Veteran&lt;/a> 📽, &lt;a class="link" href="https://soundcloud.com/in03" target="_blank" rel="noopener"
+>Musician&lt;/a> 🎶 and &lt;a class="link" href="https://calebtrevatt.com/archives" >Writer&lt;/a> ✍&lt;/p>
+&lt;h3 id="by-day-">By Day 🌅
+&lt;/h3>&lt;p>I work as a &lt;strong>Desktop Systems Engineer&lt;/strong>. I manage endpoint configuration and software deployments for the education sector.
+As part of a close-knit team, I also trade hats in technical support (walk-ins, onsite and remote)&lt;/p>
+&lt;p>When there&amp;rsquo;s time, I like to develop automation workflows to make life easier.&lt;/p>
+&lt;p>My tools of the trade include Proxmox, Python, PowerShell, Intune, Linux, Docker, LXCs, VMs, ZFS and the like.&lt;/p>
+&lt;h3 id="by-night-">By Night 🌙
+&lt;/h3>&lt;p>As a time poor Dad, I&amp;rsquo;ve had little to show for my free time over the last few years&amp;hellip;
+Recently, I&amp;rsquo;ve found inspiration to work on stuff again ✨&lt;/p>
+&lt;p>&lt;strong>Stuff like&amp;hellip;&lt;/strong>&lt;/p>
+&lt;details>
+&lt;summary>👐 Open-source&lt;/summary>
+&lt;ul>
+&lt;li>I&amp;rsquo;m passionate about open-source ❤&lt;/li>
+&lt;li>I&amp;rsquo;ve contributed to several open source projects including &lt;a class="link" href="https://github.com/MycroftAI/mycroft-core" target="_blank" rel="noopener"
+>Mycroft&lt;/a>, &lt;a class="link" href="https://github.com/charmbracelet/mods" target="_blank" rel="noopener"
+>Mods&lt;/a>, &lt;a class="link" href="https://cursor.sh" target="_blank" rel="noopener"
+>Cursor&lt;/a>, &lt;a class="link" href="https://github.com/pedrolabonia/pydavinci" target="_blank" rel="noopener"
+>PyDavinci&lt;/a>&lt;/li>
+&lt;li>I also maintain some projects &lt;a class="link" href="https://github.com/in03" target="_blank" rel="noopener"
+>myself&lt;/a>!&lt;/li>
+&lt;/ul>
+&lt;div class="video-wrapper">
+&lt;video
+src="proxima-demo.webm"
+autoplay
+loop
+muted
+playsinline
+class="responsiveVideo"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="proxima-demo.webm">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;p style="text-align: center"> I built Proxima to do distributed proxy transcoding across multiple machines &lt;/p>
+&lt;hr>
+&lt;/details>
+&lt;details>
+&lt;summary>🐧 Linux&lt;/summary>
+&lt;ul>
+&lt;li>I&amp;rsquo;ve been a Linux enthusiast since 2009&lt;/li>
+&lt;li>I first installed &lt;em>&lt;a class="link" href="https://lists.ubuntu.com/archives/ubuntu-devel-announce/2008-September/000481.html" target="_blank" rel="noopener"
+>Ubuntu Jaunty Jackalope&lt;/a>&lt;/em> inspired by my Dad&amp;rsquo;s 90&amp;rsquo;s guide to RedHat Linux.&lt;/li>
+&lt;li>I mainly did it to squeeze out more performance from my &lt;em>Compaq Potato&lt;/em> first computer.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://calebtrevatt.com/about/Jaunty.webp"
+width="1280"
+height="1024"
+srcset="https://calebtrevatt.com/about/Jaunty_hu8e2a2c5a1bd9c41ff5f67092075d105e_79696_480x0_resize_q75_h2_box_2.webp 480w, https://calebtrevatt.com/about/Jaunty_hu8e2a2c5a1bd9c41ff5f67092075d105e_79696_1024x0_resize_q75_h2_box_2.webp 1024w"
+loading="lazy"
+alt="My first taste of Linux"
+class="gallery-image"
+data-flex-grow="125"
+data-flex-basis="300px"
+>&lt;/p>
+&lt;/details>
+&lt;details>
+&lt;summary>🐍 Software Dev&lt;/summary>
+&lt;ul>
+&lt;li>Long-time &lt;a class="link" href="https://www.python.org" target="_blank" rel="noopener"
+>Python&lt;/a> programmer&lt;/li>
+&lt;li>Enjoy PowerShell more than I was expecting to 😬&lt;/li>
+&lt;li>Know enough Javascript and webdev to be dangerous 🚧&lt;/li>
+&lt;li>Going headstrong into &lt;a class="link" href="https://go.dev" target="_blank" rel="noopener"
+>Go&lt;/a> is probably a good next step&lt;/li>
+&lt;li>Keen to get more into functional programming (&lt;a class="link" href="https://elixir-lang.org" target="_blank" rel="noopener"
+>Elixir&lt;/a>, &lt;a class="link" href="https://gleam.run" target="_blank" rel="noopener"
+>Gleam&lt;/a>)&lt;/li>
+&lt;li>Have a healthy fear of &lt;a class="link" href="https://www.rust-lang.org" target="_blank" rel="noopener"
+>Rust&lt;/a> 🦀&lt;/li>
+&lt;li>Long-time &lt;a class="link" href="https://changelog.com/podcast" target="_blank" rel="noopener"
+>Changelog&lt;/a> listener 🎙&lt;/li>
+&lt;/ul>
+&lt;iframe frameBorder="0" height="157px" width="690px" src="https://git-graph.vercel.app/embed/in03?showColorLegend=true&amp;showWeekdayLabels=true&amp;showMonthLabels=true&amp;showTotalCount=true&amp;blockMargin=2&amp;blockRadius=2&amp;blockSize=10&amp;fontSize=14&amp;weekStart=4&amp;year=2024">&lt;/iframe>
+&lt;p>&lt;img src="https://github-readme-stats.vercel.app/api?username=in03&amp;amp;show_icons=true&amp;amp;theme=dark"
+loading="lazy"
+alt="My GitHub stats"
+>&lt;/p>
+&lt;p>Stats are looking a bit sad now that I don&amp;rsquo;t use GitHub for work&amp;hellip;&lt;/p>
+&lt;/details>
+&lt;details>
+&lt;summary>☁ Self-hosting&lt;/summary>
+&lt;ul>
+&lt;li>I&amp;rsquo;m a long-time homelabber!&lt;/li>
+&lt;li>I started with a Raspberry Pi 4 2GB&lt;/li>
+&lt;li>Use Proxmox, Ubuntu, DietPi, TrueNAS, Ansible, on:
+&lt;ul>
+&lt;li>&lt;code>Ryzen 5 5500 + 24TiB ZFS ZRAID2 + ancient (literally rusty) GTX 680&lt;/code>&lt;/li>
+&lt;li>&lt;code>Raspberry Pi 4GB + MergerFS + Crucial MX500 SSDs&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Docker, LXC, VMs 🏗&lt;/li>
+&lt;li>I ♥ Cloudflare &amp;amp; Tailscale.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://calebtrevatt.com/about/pve.png"
+width="767"
+height="401"
+srcset="https://calebtrevatt.com/about/pve_hucaf4a710dc62f60dc2fe45688bdc29d5_20078_480x0_resize_box_3.png 480w, https://calebtrevatt.com/about/pve_hucaf4a710dc62f60dc2fe45688bdc29d5_20078_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Proxmox FTW"
+class="gallery-image"
+data-flex-grow="191"
+data-flex-basis="459px"
+>&lt;/p>
+&lt;/details>
+&lt;details>
+&lt;summary>📡 Decentralised Comms&lt;/summary>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://en.wikipedia.org/wiki/LoRa" target="_blank" rel="noopener"
+>LoRa is awesome&lt;/a>! I have some cheeky TTGO T-Beam LoRa capable radios&lt;/li>
+&lt;li>I enjoy hacking on mesh-networking with &lt;a class="link" href="https://meshtastic.org" target="_blank" rel="noopener"
+>Meshtastic&lt;/a>&lt;/li>
+&lt;li>A fellow mesher and I established a 24KM LOS link between two nodes!&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>⚡ Workflow automation&lt;/summary>
+&lt;ul>
+&lt;li>I love working on tooling to automate workflows.&lt;/li>
+&lt;li>My love for automation started with &lt;a class="link" href="https://www.autohotkey.com" target="_blank" rel="noopener"
+>AutoHotkey&lt;/a>&lt;/li>
+&lt;li>Especially robust, long runnin-tasks&lt;/li>
+&lt;li>Performant distributed computing makes me happy (when it works) ⚡&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;details>
+&lt;summary>🤖 AI&lt;/summary>
+&lt;ul>
+&lt;li>I am fascinated by AI 👀&lt;/li>
+&lt;li>I&amp;rsquo;m excited by the prospects of automation flexibility using AI&lt;/li>
+&lt;li>WIth my background in film, I love the development of generative AI in creative arts!&lt;/li>
+&lt;li>I&amp;rsquo;ve enoyed implementing cutting-edge AI solutions with LangChain, Flowise and GPTScript.&lt;/li>
+&lt;/ul>
+&lt;/details>
+&lt;p>&lt;strong>See more details on my projects &lt;a class="link" href="https://calebtrevatt.com/projects" >here&lt;/a>!&lt;/strong>&lt;/p>
+&lt;h2 id="who-are-you">Who are you?
+&lt;/h2>&lt;p>I&amp;rsquo;m always on the look out for opportunities to collaborate with like-minded individuals on cool projects! ✨️
+If you&amp;rsquo;re interested, hit me up on on one of my socials or add a comment here!&lt;/p></description></item><item><title>Projects</title><link>https://calebtrevatt.com/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/projects/</guid><description>&lt;p>Over the years, I&amp;rsquo;ve built some cool stuff I&amp;rsquo;m proud of. Check it out here! 🚀&lt;/p></description></item><item><title>Search</title><link>https://calebtrevatt.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/search/</guid><description/></item></channel></rss>

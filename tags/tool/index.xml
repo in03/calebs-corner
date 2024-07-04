@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool on Caleb Trevatt</title><link>https://calebtrevatt.com/tags/tool/</link><description>Recent content in Tool on Caleb Trevatt</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Thu, 30 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://calebtrevatt.com/tags/tool/index.xml" rel="self" type="application/rss+xml"/><item><title>AI for the Shell</title><link>https://calebtrevatt.com/p/ai-for-the-shell/</link><pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/p/ai-for-the-shell/</guid><description>&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/cover.jpg" alt="Featured image of post AI for the Shell" />&lt;h2 id="what-is-it">What is it?
+&lt;/h2>&lt;p>AI integration is becoming ubiquitous. Warp is pioneering &amp;ldquo;the terminal of the future&amp;rdquo; with AI capabilities built-in. VS Code supports extensions like Github Copilot and Cody, while Zed includes Zed AI. But what if you need a simple, versatile tool to bring AI into any conversation? Checkout &lt;strong>Mods&lt;/strong>. Charm&amp;rsquo;s dev team and community are on a roll, producing some awesome new apps and libraries, and this is no exception. 👀&lt;/p>
+&lt;p>&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/mods_img.png"
+width="1260"
+height="716"
+srcset="https://calebtrevatt.com/p/ai-for-the-shell/mods_img_hu3d94184d52d3e360ec98111d68500759_541470_480x0_resize_box_3.png 480w, https://calebtrevatt.com/p/ai-for-the-shell/mods_img_hu3d94184d52d3e360ec98111d68500759_541470_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="Credit: Charmbracelet"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="422px"
+>&lt;/p>
+&lt;p>Mods takes the concept of prompting a GPT and brings it to the command line. It even supports piping stdin and stdout!
+Any output from any command on your terminal, think &lt;code>ls&lt;/code>, &lt;code>cat&lt;/code>, &lt;code>curl&lt;/code> and the like, can become input for Mods. Prompt it with some instructions on how to handle that data and you can either get rich feedback in your terminal or pipe the output for further processing.&lt;/p>
+&lt;p>Curious? Here are some examples!&lt;/p>
+&lt;hr>
+&lt;h2 id="examples">Examples
+&lt;/h2>&lt;h3 id="rich-markdown-output">Rich Markdown Output
+&lt;/h3>&lt;p>Mods supports rich colour and formatting out-of-the-box. Install Charm&amp;rsquo;s Glow, set the default output format to markdown and every response will be pretty. ✨&lt;/p>
+&lt;p>&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/pokemon.gif"
+width="1920"
+height="1080"
+srcset="https://calebtrevatt.com/p/ai-for-the-shell/pokemon_hu9f3e5f96d0f822bdd27368f33e4b64cc_268588_480x0_resize_box_1.gif 480w, https://calebtrevatt.com/p/ai-for-the-shell/pokemon_hu9f3e5f96d0f822bdd27368f33e4b64cc_268588_1024x0_resize_box_1.gif 1024w"
+loading="lazy"
+alt="Disclaimer: I don&amp;rsquo;t know anything about Pokemon 😬"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;h3 id="evaluate-script-security">Evaluate Script Security
+&lt;/h3>&lt;p>How about those inherently-unsafe one-liner shell script installers? Now finally safe with Mods! Here&amp;rsquo;s an example in WSL Ubuntu:
+&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/oneliner.gif"
+width="1920"
+height="1400"
+srcset="https://calebtrevatt.com/p/ai-for-the-shell/oneliner_hu30f9f8d6384e66eca6a38c5174c9ca98_1917669_480x0_resize_box_1.gif 480w, https://calebtrevatt.com/p/ai-for-the-shell/oneliner_hu30f9f8d6384e66eca6a38c5174c9ca98_1917669_1024x0_resize_box_1.gif 1024w"
+loading="lazy"
+alt="Easily get a second opinion on shell script safety."
+class="gallery-image"
+data-flex-grow="137"
+data-flex-basis="329px"
+>&lt;/p>
+&lt;h3 id="piping-github-api-data">Piping GitHub API Data
+&lt;/h3>&lt;p>Feed it raw JSON data from an API. Here it is running in good old Powershell 5 on Windows 10:
+&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/rate-repo.gif"
+width="1920"
+height="1280"
+srcset="https://calebtrevatt.com/p/ai-for-the-shell/rate-repo_huf2deda305481b1957f23897f3aedc230_432397_480x0_resize_box_1.gif 480w, https://calebtrevatt.com/p/ai-for-the-shell/rate-repo_huf2deda305481b1957f23897f3aedc230_432397_1024x0_resize_box_1.gif 1024w"
+loading="lazy"
+alt="Shameless plug for my cheeky repo."
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="360px"
+>&lt;/p>
+&lt;h3 id="piping-to-text-to-speech">Piping to Text-to-Speech
+&lt;/h3>&lt;p>What about some text to speech? We can pipe stdout to a text to speech engine. Here&amp;rsquo;s a little example with Wsay, a Windows equivalent to &amp;ldquo;Say&amp;rdquo; on MacOS: &lt;a class="link" href="https://github.com/p-groarke/wsay" target="_blank" rel="noopener"
+>https://github.com/p-groarke/wsay&lt;/a>
+&lt;img src="https://calebtrevatt.com/p/ai-for-the-shell/tts.gif"
+width="1920"
+height="1080"
+srcset="https://calebtrevatt.com/p/ai-for-the-shell/tts_hu5551ef363dbabb730d3ad9413863b1fd_80773_480x0_resize_box_1.gif 480w, https://calebtrevatt.com/p/ai-for-the-shell/tts_hu5551ef363dbabb730d3ad9413863b1fd_80773_1024x0_resize_box_1.gif 1024w"
+loading="lazy"
+alt="Duck haikus for life"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>📝 &lt;strong>Note&amp;hellip;&lt;/strong>&lt;/p>
+&lt;p>It might be worth considering something a little more natural if you want it to read you bedtime stories. &lt;a class="link" href="https://github.com/pndurette/gTTS" target="_blank" rel="noopener"
+>Google text-to-speech&lt;/a> might be a better option.&lt;/p>
+&lt;/blockquote>
+&lt;audio controls preload="auto">
+&lt;source src="tts_limerick.wav">
+&lt;/audio>
+&lt;h3 id="calling-in-a-loop">Calling in a Loop
+&lt;/h3>&lt;p>You can even call it in a loop! This will ask for 10 fresh duck haikus. Each iteration is a new conversation. No conversational context; guaranteed freshness. 🍃&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># 10 🦆 haikus straight to your speakers!&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mf">1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="mf">.10&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="p">%&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="s2">&amp;#34;Tell me a haiku about ducks&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="n">mods&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="n">wsay&lt;/span> &lt;span class="n">-o&lt;/span> &lt;span class="n">duck_haiku&lt;/span>&lt;span class="nv">$_&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">wav&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>And in Bash, like so:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> i in &lt;span class="o">{&lt;/span>1..10&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Haiku time!&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> mods &lt;span class="p">|&lt;/span> gtts-cli - --output duck_haiku&lt;span class="nv">$i&lt;/span>.mp3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>For more examples check out the official ones from &lt;a class="link" href="https://github.com/charmbracelet/mods/blob/main/examples.md" target="_blank" rel="noopener"
+>the Mods repo&lt;/a>&lt;/p>
+&lt;h2 id="multi-llm-support">Multi LLM Support
+&lt;/h2>&lt;p>Mods supports multiple Large Language Models (LLMs) through multiple providers. Providing an OpenAI API key gets you a pretty quick out-of-box experience. It&amp;rsquo;s already set up to use OpenAI&amp;rsquo;s GPT-4 by default.&lt;/p>
+&lt;p>Pop open the settings with:&lt;/p>
+&lt;p>&lt;code>mods --settings&lt;/code>&lt;/p>
+&lt;p>Note, you&amp;rsquo;ll have to define a default &lt;code>$EDITOR&lt;/code> in your environment variables.&lt;/p>
+&lt;p>You&amp;rsquo;ll be greeted with the &lt;em>mods.yml&lt;/em> file. Check out the APIs section. Mods supports:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>OpenAI&lt;/strong>: GPT-4O, GPT-4, GPT-3.5-Turbo, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Azure&lt;/strong>: GPT-4O, GPT-4, GPT-3.5-Turbo, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Perplexity AI&lt;/strong>: CodeLlama, Mistral, Claude 3, Sonar, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Groq&lt;/strong>: Mixtral, Llama 2, Llama 3, etc.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>RunPod&lt;/strong>: OpenChat, Ollama, etc (IaaS/SaaS)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Local&lt;/strong>: Llama.cpp, GPT4ALL.cpp, etc. (local - GPU optional!)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>📝 &lt;strong>Note&amp;hellip;&lt;/strong>&lt;/p>
+&lt;p>Until today, I&amp;rsquo;d never tried Groq. Boy is it fast! Evidently, Groq provides &lt;a class="link" href="https://www.semianalysis.com/p/groq-inference-tokenomics-speed-but" target="_blank" rel="noopener"
+>significantly faster inference&lt;/a> through next-gen hardware: Language Processing Units (LPUs).&lt;/p>
+&lt;p>API access is free, at least for now. I couldn&amp;rsquo;t find any official pricing anywhere. My guess is they&amp;rsquo;re relying on the free access to spread the word so they sell their chips 🍟💲&lt;/p>
+&lt;/blockquote>
+&lt;p>Check it out: &lt;a class="link" href="https://groq.com/?ref=ghost.notablegravity.com" target="_blank" rel="noopener"
+>https://groq.com&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># Default model (gpt-3.5-turbo, gpt-4, ggml-gpt4all-j...).&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">default-model&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gpt-4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">apis&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">openai&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">base-url&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://api.openai.com/v1&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">api-key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">api-key-env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">OPENAI_API_KEY&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">models&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">gpt-4&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">aliases&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;4&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">max-input-chars&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">24500&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fallback&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gpt-3.5-turbo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">gpt-4-1106-preview&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">aliases&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;128k&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">max-input-chars&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">392000&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">fallback&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">gpt-4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Configuration is the same for all providers. Provide the base url, desired models, and specify aliases for those models. If you want to use a specific model, call it like this:&lt;/p>
+&lt;p>&lt;code>&amp;quot;What is gravity?&amp;quot; | mods --model=&amp;quot;Mixtral&amp;quot;&lt;/code>&lt;/p>
+&lt;p>You can also supply &lt;code>-M&lt;/code> or &lt;code>--Ask-Model&lt;/code> to interactively choose a model (though this seems to be ignored if you pass a prompt non-interactively).&lt;/p>
+&lt;h2 id="conversational-memory">Conversational Memory
+&lt;/h2>&lt;p>Nice! Now when I was generating haikus I hard-sold amneisa as a feature for conversational freshness. What if we wanted to remember conversations across commands? Maybe with something more complicated&amp;hellip; Something that can&amp;rsquo;t be done &amp;ldquo;zero-shot&amp;rdquo;?&lt;/p>
+&lt;p>Well thankfully Mods has some handy parameters that allow resuming and managing conversations:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">c, --continue Continue from the last response or a given save title.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">C, --continue-last Continue from the last response.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">l, --list Lists saved conversations.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">t, --title Saves the current conversation with the given title.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">d, --delete Deletes a saved conversation with the given title or ID.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">s, --show Show a saved conversation with the given title or ID.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>-&lt;span class="l">S, --show-last Show the last saved conversation.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="a-really-heavy-example">A Really Heavy Example
+&lt;/h3>&lt;p>Here&amp;rsquo;s a PowerShell commandlet I made (along with 59 other functions necessary to make it work). I use it to provision temporary user accounts for student exams at my workplace.&lt;/p>
+&lt;p>&lt;code>New-Exam -D 10/03 -FT 8 -TT 11 -Alloc 105 -U 5 -CC &amp;quot;10SCI&amp;quot;&lt;/code>&lt;/p>
+&lt;p>My bespoke exam provisioning commandlet&lt;/p>
+&lt;p>For the sake of your screen real-estate I&amp;rsquo;ve used the parameter aliases, but I will explain in a moment!&lt;/p>
+&lt;p>Essentially this commandlet:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Sets Active Directory account logon hours&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sets account expiration time&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sets group membership (for exam conditions)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Validates users by name or student ID and fetches AD attributes&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Populates an HTML login sheet template with user data and exam details&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Merges the sheets into a PDF&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>And it saves me &lt;strong>HOURS.&lt;/strong>&lt;/p>
+&lt;p>But one thing remains that sucks like a parasite at my remaining time and brain power:&lt;/p>
+&lt;p>&lt;strong>The exam login requests themselves.&lt;/strong>&lt;/p>
+&lt;p>The problem is that login reqeuests aren&amp;rsquo;t consistent. Requests come in all shapes and sizes. Some come with multiple updates across a chain of emails. Some come in concise bullet points. Some say &amp;ldquo;next Wednesday&amp;rdquo;. Others say &amp;ldquo;19/05/2024&amp;rdquo;.&lt;/p>
+&lt;p>What an excellent opportunity for AI – and for Mods!&lt;/p>
+&lt;h4 id="interfacing-with-the-commandlet">Interfacing with the Commandlet
+&lt;/h4>&lt;p>So first I told Mods how to commandlet. works and the inputs and outputs I expect:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$Instructions&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;New-Exam is a powershell commandlet.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; It is used to create temporary Active Directory accounts for exams.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Here&amp;#39;s an example:
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; New-Exam -D 10/03 -FT 8 -TT 11 -U 5 -S &amp;#34;&lt;/span>&lt;span class="n">10SCI&lt;/span>&lt;span class="s2">&amp;#34; -C
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -D is &amp;#34;&lt;/span>&lt;span class="n">date&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -FT is &amp;#34;&lt;/span>&lt;span class="n">from&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -TT is &amp;#34;&lt;/span>&lt;span class="n">to&lt;/span> &lt;span class="n">time&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -U is &amp;#34;&lt;/span>&lt;span class="n">user&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -S is &amp;#34;&lt;/span>&lt;span class="n">subject&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; -C is &amp;#34;&lt;/span>&lt;span class="n">conditions&lt;/span>&lt;span class="s2">&amp;#34; (do not include)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Follow the format of the example.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Output the exact command to run, no extra information or context.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; If data is missing or invalid, output:
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; &amp;#39;echo &amp;#34;&lt;/span>&lt;span class="n">Invalid&lt;/span> &lt;span class="n">data&lt;/span>&lt;span class="err">:&lt;/span> &lt;span class="n">___&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; where blank is the invalid or missing data.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&lt;/span>&lt;span class="nv">$Instructions&lt;/span>&lt;span class="s2"> | mods --title=&amp;#34;&lt;/span>&lt;span class="n">New&lt;/span> &lt;span class="n">Exam&lt;/span>&lt;span class="s2">&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>📝 &lt;strong>Note&amp;hellip;&lt;/strong>&lt;/p>
+&lt;p>&amp;ldquo;Conditions&amp;rdquo; above I asked it not to include. The conditions aren&amp;rsquo;t difficult to pass, but for the sake of experimentation I left them out. Fortunately, if a mandatory parameter is left out of a PowerShell commandlet it will be prompted at runtime. Good to know!&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="pushing-jobs">Pushing Jobs
+&lt;/h4>&lt;p>Then I gave it an exam login request email.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">$Message&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Hi IT team!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; We have a science exam on tomorrow.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Please can we have four logins?
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; - Disable internet
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; - No USB access
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; - They can have spellcheck
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Start: 10:30, Finish: 12PM
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Kind regards,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;gt; Dane Joe&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">$&lt;/span> &lt;span class="n">Message&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="n">mods&lt;/span> &lt;span class="p">-&lt;/span>&lt;span class="n">-continue&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s2">&amp;#34;New Exam&amp;#34;&lt;/span> &lt;span class="p">|&lt;/span> &lt;span class="nb">Invoke-Expression&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="retrospect">Retrospect
+&lt;/h4>&lt;p>Running the commandlet is now as easy as &amp;ldquo;continuing&amp;rdquo; the conversation with the previous context (the instructions) and piping it to PowerShell&amp;rsquo;s Invoke-Expression. Super easy!&lt;/p>
+&lt;p>I actually have a lot of validation built into the commandlet. Like what if the exam is on a Saturday? Shouldn&amp;rsquo;t happen. What if the subject is only offered in grade 12 and a grade 10 student is taking it? Shouldn&amp;rsquo;t happen.&lt;/p>
+&lt;p>I&amp;rsquo;m a little wonky about trusting validation to the mysterious &lt;em>Latent Space&lt;/em>. Getting different answers to the same question asked twice makes me a little twitchy&amp;hellip; But technically all of those validation rules could be applied at the prompt context level instead.&lt;/p>
+&lt;p>Could this all be solved with a simple HTML form? Definitely! Yes.&lt;/p>
+&lt;p>Should it? Mmhmm. Probably!&lt;/p>
+&lt;p>As a general rule, if you want automation to produce consistently reliable outputs, you need consistently reliable inputs. AI &amp;ldquo;magics&amp;rdquo; away some of this, but it still requires some massaging and testing.&lt;/p>
+&lt;p>In a situation like this, if a user form was not an option, it would be a great candidate for an AI flow in LangChain or Flowise. I&amp;rsquo;m hoping to take a look at these soon!&lt;/p>
+&lt;h2 id="wrapping-up">Wrapping Up
+&lt;/h2>&lt;p>Mods is a great bridge between AI LLMs great demo of some cheap ad-hoc glue to try things out. Great for protyping, proof-of-concept, or ad-hoc formatting/parsing/sorting and the like. Perfect for someone like me who frequently gets caught up on the implementation details. With mods I can rapidly prototype in English, adjusting for desired behaviour with additional prompts. Once I&amp;rsquo;ve got a proof of concept, I can lay down something more solid.&lt;/p>
+&lt;p>If an HTTP form This is actually a great use case for LangChain or Flowise. Hoping to take a look at these soon!&lt;/p>
+&lt;p>So &amp;ldquo;Don&amp;rsquo;t be shy, give Mods a try.&amp;rdquo;&lt;/p></description></item></channel></rss>

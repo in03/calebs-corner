@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quick Thoughts on Caleb Trevatt</title><link>https://calebtrevatt.com/tags/quick-thoughts/</link><description>Recent content in Quick Thoughts on Caleb Trevatt</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://calebtrevatt.com/tags/quick-thoughts/index.xml" rel="self" type="application/rss+xml"/><item><title>How DRY should I be?</title><link>https://calebtrevatt.com/p/how-dry-should-i-be/</link><pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/p/how-dry-should-i-be/</guid><description>&lt;img src="https://calebtrevatt.com/p/how-dry-should-i-be/desert_dev.jpg" alt="Featured image of post How DRY should I be?" />&lt;h2 id="the-problem">The Problem
+&lt;/h2>&lt;p>I love writing abstractions.&lt;/p>
+&lt;p>It appeases my &amp;ldquo;ducks in a row&amp;rdquo; desires. It makes my code tidy and I feel like a pro calling my nifty functions.
+The problem is, it doesn&amp;rsquo;t take too long before I get backed into a corner and the tidiness unravels into spaghetti.&lt;/p>
+&lt;p>We’ve all done this.&lt;/p>
+&lt;p>It feels great to make magic, but magic gets messy when you need to fix it.
+If you’re like me, you’ll claim you’re not doing it for the magic by hiding behind the intelligent cause of staying DRY.&lt;/p>
+&lt;p>For the unfamiliar, DRY stands for Don’t Repeat Yourself. It&amp;rsquo;s a software development principle designed to reduce redudancy and maintainability issues.&lt;/p>
+&lt;p>In a nutshell:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Productivity&lt;/strong>: Writing logic once and reusing it reduces typing.&lt;/li>
+&lt;li>&lt;strong>Readability&lt;/strong>: Less code means less to read. And we read a lot more code than we write.&lt;/li>
+&lt;li>&lt;strong>Maintainability&lt;/strong>: Less code to read means less to fix when things go wrong.&lt;/li>
+&lt;/ol>
+&lt;p>At least that&amp;rsquo;s how I understand it.&lt;/p>
+&lt;p>The term was first introduced in the book &lt;em>The Pragmatic Programmer&lt;/em>, advocating:&lt;/p>
+&lt;blockquote>
+&lt;p>“Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.”&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;p>I don&amp;rsquo;t know how, but maybe it&amp;rsquo;s just because its so simple&amp;hellip; This is the one thing I just innately &lt;em>over&lt;/em>do. When I see those capital letters online, I feel like I&amp;rsquo;m around my people. They &lt;strong>get&lt;/strong> me. It resonates with the same immature hype that the minimalist movement had. Clearly important elements of truth that people have either drastically under or over-actioned with no clear markers in place to measure effectiveness.&lt;/p>
+&lt;p>I’m going to be honest. I have not read the book&amp;hellip; maybe my understanding of DRY is incomplete or immature, but I’m going to hazard a guess that most people who &amp;ldquo;practice&amp;rdquo; DRY haven&amp;rsquo;t read it either, probably not even you.&lt;/p>
+&lt;p>I imagine if there is &amp;ldquo;true&amp;rdquo; nuanced DRY, most developers aren&amp;rsquo;t familiar with it.&lt;/p>
+&lt;p>So here&amp;rsquo;s my hot take.&lt;/p>
+&lt;p>&lt;strong>I don’t think programmers need any encouragement to be more DRY.&lt;/strong>&lt;/p>
+&lt;p>Us programmers don’t like repeating ourselves. We work out pretty early that it’s easier to use functions and variables than it is to copy and paste code all over the place like 5 year old scrap-bookers.&lt;/p>
+&lt;p>We want elegance and flow; we like watching code dance for us. The problem is, if we don’t control that obsession, we end up dancing for the code.&lt;/p>
+&lt;h2 id="examples">Examples
+&lt;/h2>&lt;p>As soon as something becomes repetitive, we have the choice of leaving it in or reaching for an &lt;em>abstraction&lt;/em>.&lt;/p>
+&lt;p>Abstraction #1: The Humble Variable.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Not very DRY&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">log&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">debug&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Variables!&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">9&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">log&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">debug&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Nice. It works. But eww. If we know we want to print and log for all sorts of code throughout the project, that&amp;rsquo;s gonna get repetitive. And it&amp;rsquo;s not very future proof if we want to send that output to more &amp;ldquo;sinks&amp;rdquo; in the future. Say I have 26 &lt;code>prints&lt;/code> to stdout throughout my code. What if I now want to add the feature to send a fax every time I print? (A perfectly reasonable goal).&lt;/p>
+&lt;p>I would have to update the code &lt;strong>26 times&lt;/strong>. DRY says no!&lt;/p>
+&lt;p>I guess we could use a function?&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">wuphf&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">Notify on all the services!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">log&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">debug&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">send_email&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tweet&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fax&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">message&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wuphf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="video-wrapper">
+&lt;video
+src="wuphf.webm"
+autoplay
+loop
+muted
+playsinline
+class="responsiveVideo"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="wuphf.webm">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;p>Much better! Now my action is a single line function call that wraps five statements. I just saved myself 121 lines of code! Let the minimalist addiction kick in. Concise and maintainable.&lt;/p>
+&lt;p>But what if I need a little more flexibility? Maybe I don&amp;rsquo;t want to fax or tweet &lt;em>every&lt;/em> time. Just most of the time. I don&amp;rsquo;t want to have to create another function called &lt;code>wuphf_without_fax_and_tweet&lt;/code>. That&amp;rsquo;s clearly dumb. Let&amp;rsquo;s make our existing function more flexible.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">wuphf&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">do_print&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">do_log&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">do_send_email&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">do_tweet&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">do_fax&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">Now customisable!
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s2">&amp;#34;&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">do_print&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">do_log&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">log&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">debug&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">do_send_email&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">send_email&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">do_tweet&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">tweet&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">do_fax&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fax&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wuphf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Now I&amp;rsquo;m really solving problems. Look at all the work I&amp;rsquo;ve moved into the function ready for repeat use! My function only needs one mandatory argument. That&amp;rsquo;ll keep my function calls concise.&lt;/p>
+&lt;p>But &lt;em>ahem&lt;/em> as &amp;ldquo;useful&amp;rdquo; as our new function is, it&amp;rsquo;s a bit wordy itself. If we write a lot of functions like this, our file might be getting pretty chunky. I don&amp;rsquo;t want to see these utility functions shadowing out the rest of the business logic, now do I??&lt;/p>
+&lt;p>We need to get organised.&lt;/p>
+&lt;p>Let&amp;rsquo;s put it in another file out of the way somewhere and import it. We&amp;rsquo;re bound to add additional functions of a similar nature, they can just live in that module too. We may as well start moving any other wordy functions to their own modules and just have a tidy-up while we&amp;rsquo;re at it.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">notifications&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">wuphf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wuphf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">&amp;gt;&amp;gt;&lt;/span> &lt;span class="mi">21&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Done! Easy. Works great. Rinse-and-repeat as you please and your main script is going to look so tidy 👌&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-Python" data-lang="Python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">notifications&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">wuphf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">cli&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">app&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">users&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">new_user&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Prompt user&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">username&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">app&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get_username&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">new_user&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">username&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">wuphf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;New user added! &amp;#39;&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">username&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#39;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="its-a-trap">It&amp;rsquo;s a Trap!
+&lt;/h3>&lt;p>This is obviously a silly example, but it illustrates a trap I honestly fall into:&lt;/p>
+&lt;ol>
+&lt;li>I abstract for repeat use&lt;/li>
+&lt;li>I add more functionality to the abstraction (uh, oh, function is no longer single responsibility)&lt;/li>
+&lt;li>I move similar functions into a module&lt;/li>
+&lt;li>I need more functionality but have to dance around to implement it.&lt;/li>
+&lt;li>I think I&amp;rsquo;ve fixed it, but one fix somewhere causes a break somewhere else since there are so many calls to my now overcomplicated, fragile function.&lt;/li>
+&lt;/ol>
+&lt;div class="video-wrapper">
+&lt;video
+src="leak.webm"
+autoplay
+loop
+muted
+playsinline
+class="responsiveVideo"
+>
+&lt;p>
+Your browser doesn't support HTML5 video. Here is a
+&lt;a href="leak.webm">link to the video&lt;/a> instead.
+&lt;/p>
+&lt;/video>
+&lt;/div>
+&lt;p>If I knew I needed the flexibility of notifying to different services, I wouldn&amp;rsquo;t have done the abstraction like this to begin with. Functionality that should exist as statements in the main script now exists two layers deep.&lt;/p>
+&lt;p>Not that I&amp;rsquo;d wish &lt;em>Notepad&lt;/em> on someone as an IDE, but&amp;hellip; good luck navigating without Intellisense.
+We haven&amp;rsquo;t even touched classes.&lt;/p>
+&lt;h3 id="stuck-with-the-cheque">Stuck with the Cheque
+&lt;/h3>&lt;p>Potential downsides of abstraction:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Complexity&lt;/strong>. Abstraction can turn simple code into a navigation nightmare. A code block becomes a function, then a file, then a module. Code functionality can become hidden deep in the codebase.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Brittle&lt;/strong>. Abstractions can create unnecessary hoops to jump through in order to anticipate future needs that may never materialise. These hoops constrain the way we write code that interfaces with it. If the code that needs it can&amp;rsquo;t change, we end up having to change the abstraction and potentially any other code that&amp;rsquo;s already used it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Maintainability&lt;/strong>. Code that&amp;rsquo;s complex and brittle is already hard to work with. What about anyone in the future who has to work on that code? Can they learn it quickly? What about yourself in a weeks time?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Premature abstraction is basically blind refactoring. We don&amp;rsquo;t want to refactor later when we have the facts, let&amp;rsquo;s refactor now without them!&lt;/p>
+&lt;h2 id="mitigation">Mitigation
+&lt;/h2>&lt;p>Alright, so too much DRY can lead to brittle abstractions. How do we find a good balance?
+Well, being aware is a good first step. Hopefully, you can analyse your own dev journey and see where you lie on that spectrum.
+You might be doing great and this is all for someone else.&lt;/p>
+&lt;p>But if this is for you, read on. Here&amp;rsquo;s a few things that have helped me.&lt;/p>
+&lt;h3 id="consider-abstraction-usefulness">Consider Abstraction Usefulness
+&lt;/h3>&lt;p>Be honest with yourself. Ask yourself these questions before you get your hands dirty:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>How likely are you to need this later?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Is there something more generic that does the job?&lt;/p>
+&lt;ul>
+&lt;li>If so, exhaust those options before rolling your own!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>How nested is your code?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What do you gain in making a code block a function?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What do you gain in moving a set of functions into a class?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>What do you gain in moving a set of functions/classes to a separate file (module, script, etc.)?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="file-length">File Length
+&lt;/h3>&lt;p>Is your file getting too long?
+Are you tired of scrolling up and down so much?&lt;/p>
+&lt;p>To be honest, it probably isn&amp;rsquo;t too long.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Are you using &lt;a class="link" href="https://code.visualstudio.com/docs/editor/codebasics#_folding" target="_blank" rel="noopener"
+>code folding shortcuts&lt;/a> effectively?
+You can collapse by different levels of indentation. E.g. If you have a set of test functions defined at one indentation level in, you can fold all the function definitions into their titles with &lt;code>ctrl/cmd + k, ctrl/cmd 1&lt;/code>. Each indentation level deeper is a higher number.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Are you using &lt;a class="link" href="https://code.visualstudio.com/docs/editor/editingevolved#_peek" target="_blank" rel="noopener"
+>&amp;ldquo;Peek&amp;rdquo;&lt;/a>?
+VS Code has an option to jump to function definitions from references to a function elsewhere (Go to Definition). It also allows the inverse, listing references from the definition itself (Go to References). Use &lt;code>ctrl/cmd + left click&lt;/code> or &lt;code>shift + F12&lt;/code> and &lt;code>option + F12&lt;/code> respectively. Using Peek to perform these navigations gives you a little window to work with, so you can update a reference (or several) and not have the mental overhead of finding you way back to deal with.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Are you using &lt;a class="link" href="https://stackoverflow.com/questions/35424367/how-can-i-navigate-back-to-the-last-cursor-position-in-visual-studio-code" target="_blank" rel="noopener"
+>cursor history navigation&lt;/a>?
+VS Code has a &amp;ldquo;Go forward&amp;rdquo; and &amp;ldquo;Go back&amp;rdquo; functionality for the cursor. If the Peek window isn&amp;rsquo;t enough and you just need more visual context, or hindsight is 20/20 and you need to go back somewhere that wasn&amp;rsquo;t a linked function definition/reference, you can navigate to where your cursor was last and back again.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Are you using &lt;a class="link" href="https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol" target="_blank" rel="noopener"
+>&amp;ldquo;Rename Symbol&amp;rdquo;&lt;/a>?
+This one&amp;rsquo;s a stretch, but if you find the possibility of similar names causing rename conflict has you wanting to split your file, consider using Rename Symbol. If you need to change the name of a function or variable &lt;em>everywhere&lt;/em> you might not want to change every instance of the word too. Say you have a function named, &amp;ldquo;file&amp;rdquo;, but you realise a little late that &lt;code>file&lt;/code> is actually a built-in variable in your language that shouldn&amp;rsquo;t be overriden. If you run &amp;ldquo;find and replace&amp;rdquo;, every instance of that word will change, including instances of that built-in variable and any time you used the word &amp;ldquo;file&amp;rdquo; in inline comments or as part of a name in any other variables, function calls or methods, etc. Using Rename Symbol ensures you don&amp;rsquo;t mess with that other stuff.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Learning how to navigate in your IDE efficiently will help prevent you from segregating your code out of navigation frustration. When you think you&amp;rsquo;ve maxed out your ability to grasp navigation tools, if it feels like there&amp;rsquo;s too much going on in a file, then consider moving stuff.&lt;/p>
+&lt;p>If after some time you can see sections that have discrete responsibilities that you have not edited in a while, you can try moving them, but consider what you will lose and what you will gain carefully!&lt;/p>
+&lt;p>There&amp;rsquo;s plenty more to consider. Use the IDE&amp;rsquo;s outline, breadcrumbs, etc.&lt;/p>
+&lt;h3 id="code-complexity">Code Complexity
+&lt;/h3>&lt;p>&lt;a class="link" href="https://jellyfish.co/library/cyclomatic-complexity/" target="_blank" rel="noopener"
+>Cyclomatic complexity&lt;/a> is a metric that measures the complexity of a program by counting the number of linearly independent paths through a program&amp;rsquo;s source code.&lt;/p>
+&lt;p>Essentially, it&amp;rsquo;ll help you keep yourself honest with stats that tell you when you&amp;rsquo;re a bad boy. Too many nested if statements in a single function, that sort of thing. It won&amp;rsquo;t help you with &lt;a class="link" href="https://www.geeksforgeeks.org/separation-of-concerns-soc/" target="_blank" rel="noopener"
+>Separation of Concerns&lt;/a> (&lt;a class="link" href="https://grugbrain.dev/#grug-on-soc" target="_blank" rel="noopener"
+>if that&amp;rsquo;s a principle you follow&lt;/a>), but it will help you with keeping complexity low. Unnecessary complexity is what makes a brittle abstraction.&lt;/p>
+&lt;p>If you&amp;rsquo;re using Python, consider using &lt;a class="link" href="https://docs.astral.sh/ruff/configuration/" target="_blank" rel="noopener"
+>Ruff as your linter&lt;/a> (and formatter). It enables McCabe&amp;rsquo;s complexity rule for linting by default (c901). It&amp;rsquo;s written in Rust, is very fast and includes support for a lot of linting rules.&lt;/p>
+&lt;h3 id="snippets">Snippets
+&lt;/h3>&lt;p>Snippets are blocks of text that you can inject at your cursor.
+If we&amp;rsquo;re talking code, snippets are a great way to inject common code patterns.
+They offer a template for a common pattern, like looping or conditional statements.&lt;/p>
+&lt;p>I&amp;rsquo;ve never much used snippets until recently.&lt;/p>
+&lt;p>I&amp;rsquo;ve had to push through some mental friction in using them.
+Part of me feels if I use snippets, I&amp;rsquo;ll forget how to write the code patterns they inject.
+It&amp;rsquo;s like trading memory-space; if I need to remember the name of a snippet and a keyboard shortcut for it, I&amp;rsquo;m going to forget the code pattern.&lt;/p>
+&lt;p>Fortunately, this isn&amp;rsquo;t true. How you get your code into the IDE matters a lot less than understanding what it does.
+Sometimes, I find myself staring at the flashing cursor with 10 different for-loop implementations fighting for my attention.
+Snippets help take this load off a bit.&lt;/p>
+&lt;p>Visual Studo Code has a built-in snippet feature that you can use to create snippets.
+There are also a heap of snippets published on the VSCode marketplace as extensions.
+When you insert a snippet in VSCode, you can tab through the required variables to quickly fill them out.&lt;/p>
+&lt;p>Other IDEs have similar implementations.&lt;/p>
+&lt;p>if you find youself needing snippets across IDEs, code editors in browsers or quickly in a terminal, consider using &lt;a class="link" href="https://www.raycast.com" target="_blank" rel="noopener"
+>RayCast&lt;/a> if you&amp;rsquo;re on a Mac – for a bunch of reasons, snippets being one. Raycast allows snippet injection globally, anywhere you can type. It also includes support for dynamic placeholders (variables).
+It goes beyond code. It&amp;rsquo;s handy for templating emails, Zendesk tickets, whatever you can think of.&lt;/p>
+&lt;p>I&amp;rsquo;ve also used &lt;a class="link" href="https://espanso.org/install/" target="_blank" rel="noopener"
+>Espanso&lt;/a>, &lt;a class="link" href="https://www.keyboardmaestro.com/main/" target="_blank" rel="noopener"
+>KeyboardMaestro&lt;/a>, and &lt;a class="link" href="https://www.autohotkey.com" target="_blank" rel="noopener"
+>AutoHotkey&lt;/a> on Windows.
+They all have their own unique features, but support snippets at a minimum.&lt;/p>
+&lt;h3 id="ai-assistance">AI Assistance
+&lt;/h3>&lt;p>AI Autocomplete is different. It often completes what I&amp;rsquo;m going to type and of course, I get to accept or deny the suggestion.
+This is one less cognitive hurdle compared to snippets, I&amp;rsquo;m not trading any mental real-estate to remember a trigger.
+It comes with the huge added benefit of being intelligent:&lt;/p>
+&lt;ul>
+&lt;li>You don&amp;rsquo;t need to add any snippets manually&lt;/li>
+&lt;li>Completions are fully dynamic, using the context of your file, repo or even whole codebase&lt;/li>
+&lt;li>Cycle through multiple suggestions if the first one doesn&amp;rsquo;t work&lt;/li>
+&lt;/ul>
+&lt;p>I&amp;rsquo;ve been using Sourcegraph&amp;rsquo;s Cody as an alternative to the non-free Github Copilot.
+I did some work on a frontend with react-form-json-schema and PowerShell as a backend (WILD stuff – see the amazing &lt;a class="link" href="https://docs.powershelluniversal.com" target="_blank" rel="noopener"
+>Powershell Universal&lt;/a> platform). Because the LLM was familiar with the larger react-form-json-schema project, it had no trouble translating that into my niche PowerShell codebase. All the form validation is in native PowerShell with very consistent &lt;code>Test&lt;/code> functions for each field:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-PowerShell" data-lang="PowerShell">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">Test-RequesterEmail&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">param&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nb">Parameter&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="na">mandatory&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="vm">$True&lt;/span>&lt;span class="p">)]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="no">String&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># Get AD user&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">$User&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">Get-ADUser&lt;/span> &lt;span class="n">-Filter&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="n">EmailAddress&lt;/span> &lt;span class="o">-eq&lt;/span> &lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="p">}&lt;/span> &lt;span class="n">-Properties&lt;/span> &lt;span class="n">EmailAddress&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DistinguishedName&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">Write-Host&lt;/span> &lt;span class="s2">&amp;#34;DEBUG: AD User info: &lt;/span>&lt;span class="nv">$User&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># Test domain address&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">If&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">-not&lt;/span> &lt;span class="nv">$User&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">Write-Host&lt;/span> &lt;span class="s2">&amp;#34;ERROR: Invalid! User &amp;#39;&lt;/span>&lt;span class="p">$(&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="s2">&amp;#39; not registered in Active Directory.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">New-ValidationResult&lt;/span> &lt;span class="n">-Name&lt;/span> &lt;span class="s2">&amp;#34;Requester Email&amp;#34;&lt;/span> &lt;span class="n">-Status&lt;/span> &lt;span class="vm">$False&lt;/span> &lt;span class="n">-Message&lt;/span> &lt;span class="s2">&amp;#34;&amp;#39;&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="s2">&amp;#39; is not a valid XCompany email address.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># Test staff address&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">If&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">-not&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nv">$User&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="py">DistinguishedName&lt;/span> &lt;span class="o">-match&lt;/span> &lt;span class="s2">&amp;#34;OU=XCompany Staff&amp;#34;&lt;/span>&lt;span class="p">)){&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">Write-Host&lt;/span> &lt;span class="s2">&amp;#34;ERROR: Invalid! User &amp;#39;&lt;/span>&lt;span class="p">$(&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="s2">&amp;#39; is not in &amp;#34;&amp;#34;Staff&amp;#34;&amp;#34; OU.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">New-ValidationResult&lt;/span> &lt;span class="n">-Name&lt;/span> &lt;span class="s2">&amp;#34;Requester Email&amp;#34;&lt;/span> &lt;span class="n">-Status&lt;/span> &lt;span class="vm">$False&lt;/span> &lt;span class="n">-Message&lt;/span> &lt;span class="s2">&amp;#34;&amp;#39;&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="s2">&amp;#39; is not a valid staff email address.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">New-ValidationResult&lt;/span> &lt;span class="n">-Name&lt;/span> &lt;span class="s2">&amp;#34;Requester Email&amp;#34;&lt;/span> &lt;span class="n">-Status&lt;/span> &lt;span class="vm">$True&lt;/span> &lt;span class="n">-Message&lt;/span> &lt;span class="s2">&amp;#34;&amp;#39;&lt;/span>&lt;span class="nv">$RequesterEmail&lt;/span>&lt;span class="s2">&amp;#39; is a valid XCompany staff email address.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>After writing a couple of these validation functions, Cody pretty much did the rest. All my fields were defined in the schema. Cody pre-empted each line I needed. Even the comments.
+It even replicated my weird &lt;code>Write-Host&lt;/code> stuff with &amp;ldquo;ERROR&amp;rdquo; and &amp;ldquo;INFO&amp;rdquo; prefixes (PU sends &lt;code>Write-Host&lt;/code> to the browser console, but not &lt;code>Write-Debug/Info/Error&lt;/code>).&lt;/p>
+&lt;p>If your code is predictable enough, you may find AI autocomplete does a fine job of anticipating your structure. This in a way is a good marker of your consistency as a programmer. If you find it anticipating your code well, you might find that the mental strain of yourself anticipating your code is also lowered.&lt;/p>
+&lt;p>AI isn&amp;rsquo;t always going to have the completions you want, but it is a step up from snippets for cutting through the tedium.
+Just be aware that when you don&amp;rsquo;t want a suggestion it can be a bit of a nuisance and suggest a completiion if you pause for too long.
+In my opinion, this is more annoying than you&amp;rsquo;d think. If you struggle with maintaining a train-of-thought, unwanted completions will derail you quicker.&lt;/p>
+&lt;p>Regarding DRY itself, if you find a block of code you think could be more concise, ask Cody to rewrite it. See what it suggests.&lt;/p>
+&lt;h2 id="ai-prompting">AI prompting
+&lt;/h2>&lt;p>We&amp;rsquo;re all familiar with ChatGPT by now.&lt;/p>
+&lt;p>The most recent model GPT-4O has really impressed me. I&amp;rsquo;ve received some great working code examples from it that just worked out-of-the-box. The Powershell Universal project above, it&amp;rsquo;s all in one file, 400 lines of code. I pasted that into ChatGPT and asked for a few changes and it sent it right back, changes applied. It actually became more convenient to ask for changes I knew how to make directly within ChatGPT itself. By the time I could make the necessary modifications to the &lt;code>FormSchema&lt;/code>, &lt;code>UISchema&lt;/code> and &amp;ldquo;Test&amp;rdquo; functions myself, ChatGPT would&amp;rsquo;ve finished writing the whole script out again from scratch.&lt;/p>
+&lt;p>I&amp;rsquo;m excited to see more convenient coding workflows pop up.&lt;/p>
+&lt;p>Consider &lt;a class="link" href="https://sourcegraph.com/cody" target="_blank" rel="noopener"
+>Cody&lt;/a>, &lt;a class="link" href="https://chatgpt.com" target="_blank" rel="noopener"
+>ChatGPT&lt;/a>, &lt;a class="link" href="https://github.com/features/copilot" target="_blank" rel="noopener"
+>GitHub Copilot&lt;/a>, &lt;a class="link" href="https://groq.com" target="_blank" rel="noopener"
+>Groq&lt;/a>, &lt;a class="link" href="https://ollama.com" target="_blank" rel="noopener"
+>Ollama&lt;/a> and &lt;a class="link" href="https://github.com/charmbracelet/mods" target="_blank" rel="noopener"
+>Mods&lt;/a> to name a few AI tools&amp;hellip; and &lt;a class="link" href="https://www.trycursor.com" target="_blank" rel="noopener"
+>Cursor&lt;/a>, for an AI first IDE. This seems to be getting better by the day.&lt;/p>
+&lt;h3 id="environments">Environments
+&lt;/h3>&lt;p>Consider your production and development environments. How will it deal with your abstractions? Is it going to play with a modular codebase nicely?
+Environments can be the difference between a project building successfully or not. If manual changes to the code are required to deploy in common environments, merging upstream changes from git gets messy. This is not a fun experience for your users.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Portainer has a great GitOps style integration for its Stacks feature. It works great with a &lt;code>docker-compose.yaml&lt;/code> and &lt;code>.env&lt;/code>, but it won&amp;rsquo;t easily handle sidecar yaml configs or a &lt;code>docker-compose.override.yaml&lt;/code>. Does the configuration need to be abstracted into multiple files?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Powershell Universal has an internal repo that is not designed for manual updates because of the way file-watching works to reload downstream services. Creating and importing modules can get a bit prickly without proper planning.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Application hosting services like Fly.io expect a certain file structure. Keeping your code in line with recommendations might be important to prevent refactoring later.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Can your planned abstractions be used later in this codebase? How about in future projects?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Can you release code in a way to make abstractions more compatible?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="frameworks-libraries-and-other-dependencies">Frameworks, Libraries and other Dependencies
+&lt;/h3>&lt;p>This one takes good judgement. Both of the follwing statements are true:&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>best&lt;/strong> kind of abstractions to work with are ones you didn&amp;rsquo;t write&lt;/li>
+&lt;li>The &lt;strong>worst&lt;/strong> kind of abstractions to work with are ones you didn&amp;rsquo;t write&lt;/li>
+&lt;/ul>
+&lt;p>Provided you are careful about the dependencies you choose, you can find yourself with a featureful set of abstractions that are well scoped, well planned, maintained, secure, rarely include breaking changes and have a healthy community happy to support.&lt;/p>
+&lt;p>Nothing lasts forever, but good dependencies should outlast your own projects.
+When choosing dependencies, check:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>It doesn&amp;rsquo;t do too much.&lt;/p>
+&lt;ul>
+&lt;li>Depedencies that do too much become a greater risk to your code if they become unmaintained.&lt;/li>
+&lt;li>Poor scoping may also be indicative of poor planning and more difficult maintenance.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Maintainer engagement.&lt;/p>
+&lt;ul>
+&lt;li>Are issues responded to in a timely manner?&lt;/li>
+&lt;li>Are pull requests reviewed?&lt;/li>
+&lt;li>Are new features added?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>It has a healthy community.&lt;/p>
+&lt;ul>
+&lt;li>Are users asking questions and getting answers from the community?&lt;/li>
+&lt;li>Is there a dedicated place for discussion?&lt;/li>
+&lt;li>Is the community engaged with the direction of the project?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>It&amp;rsquo;s mature.&lt;/p>
+&lt;ul>
+&lt;li>Does it use semantic versioning?&lt;/li>
+&lt;li>Are they in Alpha/Beta or Release Candidate stages?&lt;/li>
+&lt;li>Have they released a 1.0.0 version yet?&lt;/li>
+&lt;li>Is the project prone to breaking changes?&lt;/li>
+&lt;li>Linters? Formatters? CI/CD workflows?&lt;/li>
+&lt;li>What sort of tooling is used for development?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Documentation.&lt;/p>
+&lt;ul>
+&lt;li>Is the code well documented?&lt;/li>
+&lt;li>Is the code well commented?&lt;/li>
+&lt;li>Is there lag between the main branch and docs?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Source Code.&lt;/p>
+&lt;ul>
+&lt;li>Is the code well structured?&lt;/li>
+&lt;li>Do you understand it?&lt;/li>
+&lt;li>Could you confidently make contributions to it if you needed to?&lt;/li>
+&lt;li>How much code is there?&lt;/li>
+&lt;li>How abstract is it? 😏&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Rolling-your-own has maintainability implications, but at the end of the day, it&amp;rsquo;s code you wrote and understand.
+Vulnerabilities in that code won&amp;rsquo;t go away unless you fix them, but you&amp;rsquo;ll be safe from &lt;a class="link" href="https://attack.mitre.org/techniques/T1195/" target="_blank" rel="noopener"
+>supply chain attacks&lt;/a>.&lt;/p>
+&lt;p>Dependencies come with whatever their maintainers decide to put in their code. A healthy open-source community may detect and mitigate security vulnerabilities, fix bugs, add docs and maybe even introduce new features. An unhealthy community can lead to stagnant, vulnerable, out-of-date code that may even stop working with other dependencies or language versions.&lt;/p>
+&lt;p>Choose wisely!&lt;/p></description></item></channel></rss>

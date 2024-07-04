@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Community on Caleb Trevatt</title><link>https://calebtrevatt.com/tags/community/</link><description>Recent content in Community on Caleb Trevatt</description><generator>Hugo -- gohugo.io</generator><language>en-au</language><lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://calebtrevatt.com/tags/community/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Good where you're Not</title><link>https://calebtrevatt.com/p/getting-good/</link><pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate><guid>https://calebtrevatt.com/p/getting-good/</guid><description>&lt;img src="https://calebtrevatt.com/p/getting-good/cover.jpg" alt="Featured image of post Getting Good where you're Not" />&lt;h2 id="handling-weakness">Handling Weakness
+&lt;/h2>&lt;p>When it comes to programming, I&amp;rsquo;m very visually orientated. I struggle to grasp theoretical concepts that don&amp;rsquo;t have physical real-world analogues.&lt;/p>
+&lt;p>Yeah. I love analogies. Too much.&lt;/p>
+&lt;p>&lt;strong>Functional programming.&lt;/strong> I struggle to visualise it. I love its elegance (when it works), but I am &lt;em>so&lt;/em> unproductive in it. I know it has a steep learning curve, but I&amp;rsquo;m not joking. I don&amp;rsquo;t think I&amp;rsquo;m smart enough to use it efficiently, at least not in a professional capacity.&lt;/p>
+&lt;p>You can add to that list:&lt;/p>
+&lt;ul>
+&lt;li>Kubernetes&lt;/li>
+&lt;li>Authentication&lt;/li>
+&lt;li>Cryptography&lt;/li>
+&lt;li>Probably 90% of networking&lt;/li>
+&lt;li>Cloud architecture&lt;/li>
+&lt;li>ML dev&lt;/li>
+&lt;li>UI/UX&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://calebtrevatt.com/p/getting-good/my-brain.jpg"
+width="1472"
+height="832"
+srcset="https://calebtrevatt.com/p/getting-good/my-brain_huac897fbaa57124c88e0503e9bff7dc7c_883554_480x0_resize_q75_box.jpg 480w, https://calebtrevatt.com/p/getting-good/my-brain_huac897fbaa57124c88e0503e9bff7dc7c_883554_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+alt="It&amp;rsquo;s a little too realistic&amp;hellip;"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="424px"
+>&lt;/p>
+&lt;h2 id="healthy-constraints">Healthy Constraints
+&lt;/h2>&lt;p>Largely, I&amp;rsquo;ve been able to look at those things and go, &amp;ldquo;It&amp;rsquo;s okay. I probably didn&amp;rsquo;t want to be a network administrator anyway&amp;rdquo;. There is a blessing in constraints; if the road is as wide as it is long, we wouldn&amp;rsquo;t know which direction to go.&lt;/p>
+&lt;p>Some of that other stuff is harder to look past. &amp;ldquo;How am I gonna be a decent software developer if I can&amp;rsquo;t make a decent UI?&amp;rdquo; and I get really caught up on it.&lt;/p>
+&lt;p>It would have been fine for Batman to go to a zoo and look a bat in the eye a few times a week, maybe pet one, and call his phobia dealt with. But he took it too far and became a bat-themed vigilante. But I love that. I want to be like Batman and turn my weaknesses into strengths, face my fears and GET GOOD.&lt;/p>
+&lt;p>Like Batman, I&amp;rsquo;ve gone down the rabbit-hole on my weaknesses.&lt;/p>
+&lt;p>Unlike Batman, I haven&amp;rsquo;t been as successful.&lt;/p>
+&lt;p>I don&amp;rsquo;t want to just be okay at frontend dev, I want it to become a strength. So I muster inspiration, it becomes the focus, I form unrealistic expectations about my progress and I lose inspiration. Rinse and repeat.&lt;/p>
+&lt;p>Instead I should let these weaknesses constrain me and redirect me in my strengths to where I &lt;em>can&lt;/em> progress. Like gutter guards when bowling; feel the feedback, bounce back, and keep moving forwards. Let your weaknesses provide you with &lt;strong>focus&lt;/strong>.&lt;/p>
+&lt;h2 id="when-to-push">When to Push
+&lt;/h2>&lt;p>That isn&amp;rsquo;t to say you should never front up any weakness.
+You need to use good judgement.&lt;/p>
+&lt;p>Say you suck at cloud architecture.&lt;/p>
+&lt;ul>
+&lt;li>How did you get here? Is it relevant?&lt;/li>
+&lt;li>Can your goals be met another way?&lt;/li>
+&lt;/ul>
+&lt;p>If not&amp;hellip;&lt;/p>
+&lt;ul>
+&lt;li>What do you lack that has produced this weakness?&lt;/li>
+&lt;li>Is it just experience?&lt;/li>
+&lt;li>Do you need to get yourself out there?&lt;/li>
+&lt;/ul>
+&lt;p>Or&amp;hellip;&lt;/p>
+&lt;ul>
+&lt;li>Do you lack talent and skill too?&lt;/li>
+&lt;li>Does it really grind your mental cogs?&lt;/li>
+&lt;li>Do you catch yourself tuning out because it doesn&amp;rsquo;t engage you?&lt;/li>
+&lt;/ul>
+&lt;p>Don&amp;rsquo;t try to force your brain or your personality into something it isn&amp;rsquo;t.&lt;/p>
+&lt;p>Be honest with yourself. As before, take the best you can from these limitations.&lt;/p>
+&lt;h3 id="ambidexterity">Ambidexterity
+&lt;/h3>&lt;p>Some weaknesses are present because they are strengths in other areas. They exist on a spectrum. You might not be great at administering organisational policy or configuration, but excel at creating organic community around open-source projects. Maybe people energise you but data doesn&amp;rsquo;t?&lt;/p>
+&lt;p>Some things are a left-right brain tug-of-war and it&amp;rsquo;s simply rare to be &amp;ldquo;ambidextrous&amp;rdquo; and have both. Check your weaknesses for corresponding strengths. Let those discoveries motivate you and inspire you and kick that imposter syndrome in the butt.&lt;/p>
+&lt;p>Other things exist on that same spectrum and can be changed, but will cost you territory somewhere else. The strengths that make someone a great counsellor may have to be abandoned if they want to be a ring-in CEO who saves companies from the edge of bankruptcy.&lt;/p>
+&lt;p>But what about where you are ambidextrous? If you find something in yourself that is traditionally a rare coupling of strengths, use that in putting yourself that your counterparts are not. Got video-editing chops? Know how to code? How about use that to create dynamic, programmatically generated content!&lt;/p>
+&lt;h2 id="augmenting-weakness">Augmenting Weakness
+&lt;/h2>&lt;p>Sometimes you just have to eat your vegetables and push through. You need to get familiar with an unintuitive process in a role that you otherwise enjoy. That doesn&amp;rsquo;t mean you tap out and go on the hunt for your unicorn, but it doesn&amp;rsquo;t mean you have to endure it vanilla either.&lt;/p>
+&lt;p>Fortunately, we live in the age of AI. GPT-4O, Copilot, Gemini and Claude are all advanced enough to search the internet and provide great answers for topics they may not even have training on. RAG is affordable and easy. Let AI be your tutor and translate obtuse documentation for you.&lt;/p>
+&lt;h3 id="ai-tools">AI Tools
+&lt;/h3>&lt;p>I was messing around with Powershell Universal the other day (for some quick form validation with backend Active Directory commands. I spent a few hours over a week getting into the nitty gritty of form components and schemas.&lt;/p>
+&lt;p>Out of curiosity, I tried asking GPT-4O to build me a form with my laundry list of fields and validations. To my surprise, it pumped out several hundred lines of code that only needed two adjustments to build and render successfully. I let it know and the successive builds were perfect every time. Prompting with further changes became quicker than navigating the code and adjusting it by hand.&lt;/p>
+&lt;p>Am I a frontend wizard now? Hardly. But it&amp;rsquo;s an augmented weakness now. It gets the job done and it doesn&amp;rsquo;t drain my mental capacity anymore. I can focus on what I&amp;rsquo;m good at.&lt;/p>
+&lt;p>&lt;strong>Some more AI tools (all free):&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Cody (Sourcegraph&amp;rsquo;s AI IDE assistant)&lt;/li>
+&lt;li>Mods (Command-line pipeable AI)&lt;/li>
+&lt;li>Ollama (Offline self-hosted LLMs)&lt;/li>
+&lt;/ul>
+&lt;h3 id="what-you-dont-know">What you don&amp;rsquo;t know
+&lt;/h3>&lt;p>You don&amp;rsquo;t know what you don&amp;rsquo;t know. GPTs traditionally struggle with complex questions founded on poor understanding of the problem.&lt;/p>
+&lt;p>Remember the &amp;ldquo;Chat&amp;rdquo; in Chat-GPT.&lt;/p>
+&lt;p>You don&amp;rsquo;t need to give mega-prompts.&lt;/p>
+&lt;ul>
+&lt;li>Ask the right questions.&lt;/li>
+&lt;li>Ask broad questions.&lt;/li>
+&lt;li>Ask smaller questions.&lt;/li>
+&lt;/ul>
+&lt;p>If you don&amp;rsquo;t know enough about the problem, don&amp;rsquo;t constrain AI to provide you with a solution that fits your suggested implementation of a solution.&lt;/p>
+&lt;p>The more you understand what you don&amp;rsquo;t know, the better chance you have of learning what you do need to know. It&amp;rsquo;s very easy to learn in the wrong direction.&lt;/p>
+&lt;h2 id="community">Community
+&lt;/h2>&lt;p>Best for last.&lt;/p>
+&lt;p>Sometimes you need more organic discussion with specific experience. I.e. a real person.
+If you have co-workers, ask them, and ask them if they know anyone too.&lt;/p>
+&lt;p>After your physical circles, try online communities:&lt;/p>
+&lt;ul>
+&lt;li>GitHub discussions, issues&lt;/li>
+&lt;li>&lt;strong>Relevant&lt;/strong> subreddits&lt;/li>
+&lt;li>Discord servers you find on Youtube channels&lt;/li>
+&lt;li>Forums (especially if they&amp;rsquo;re Discourse based)&lt;/li>
+&lt;li>LinkedIn (surprisingly)&lt;/li>
+&lt;/ul>
+&lt;p>Unlike GPTs who can listen to your thankless questions all day, community works best for everyone when involvement is not transactional, but relational. I&amp;rsquo;m not just talking about manners. You will get more relevant, helpful information when you prioritise relationships, and it will be more enjoyable.&lt;/p>
+&lt;p>Don&amp;rsquo;t underestimate the value of individuals. If someone has an answer for you, they likely have other relevant experience that could be useful to you, and you to them. When you do work you&amp;rsquo;re interested in, good at, and can find others of like-mind, you&amp;rsquo;re basically just making friends.&lt;/p>
+&lt;p>Tech-bros could learn a bit from truckies here. Truck drivers seem to know everyone and they&amp;rsquo;ll &amp;ldquo;know a guy&amp;rdquo; for every job. We think we contribute to community when we share spicy memes or goofy comments with people we don&amp;rsquo;t know on socials, but that&amp;rsquo;s not it. Find your crowd and get to know its people.&lt;/p>
+&lt;p>Think about it yourself, if someone asked you if you &amp;ldquo;know a guy&amp;rdquo; in your tech circles. Would you point them to a person or a URL? Let that be your criteria for community.&lt;/p>
+&lt;h2 id="summing-up">Summing up
+&lt;/h2>&lt;ul>
+&lt;li>Find out what you&amp;rsquo;re not good at.&lt;/li>
+&lt;li>Determine if you actually need to be good at it.&lt;/li>
+&lt;li>Don&amp;rsquo;t be tempted by Batman&amp;rsquo;s dangling carrots.&lt;/li>
+&lt;li>Use your &amp;ldquo;ambidextrous&amp;rdquo; strengths.&lt;/li>
+&lt;li>Leverage modern tooling.&lt;/li>
+&lt;li>Actively involve yourself in modern community.&lt;/li>
+&lt;/ul>
+&lt;p>Most importantly:&lt;/p>
+&lt;p>Do you really need to learn Rust? Can you settle for Go?&lt;/p></description></item></channel></rss>
