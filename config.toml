@@ -152,7 +152,7 @@ show_repo = true
 links = [
 
   {url = "@/blog/_index.md", name = "Articles"},
-  {url = "/atom.xml", name = "Feed"},
+  {url = "/atom.xml", name = "RSS"},
 ]
 
 
