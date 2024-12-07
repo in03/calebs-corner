@@ -3,6 +3,13 @@ insert_anchor_links = "left"
 title = "Caleb's Corner"
 +++
 
-# Welcome to my little corner of cyberspace.
+# 👋 Hi, I'm Caleb.
+## Welcome to my little corner of cyberspace.
 
-{{ image(url="landing.png", no_hover=true) }}
+> **Creative Investigator** ✨ | **Tech Tinkerer** 🛠️ | **Thing Thinkerer** 💡
+
+I'm a busy dad, husband, and IT enthusiast.
+I write code, deploy software and read bedtime stories.
+
+{{ image(url="dave_and_me.jpg", no_hover=true) }}
+

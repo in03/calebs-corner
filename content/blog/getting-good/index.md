@@ -4,10 +4,12 @@ authors = ["Caleb Trevatt"]
 title = "Getting Good"
 description = "When, why, and how to handle your personal weaknesses."
 date = 2024-06-16
-[taxonomies]
-tags = ["Software dev", "Deep thoughts", "Work", "AI", "Community"]
+
 [extra]
 banner = "cover.jpg"
+
+[taxonomies]
+tags = ["Software dev", "Deep thoughts", "Work", "AI", "Community"]
 +++
 
 ## Handling Weakness

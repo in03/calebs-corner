@@ -1,7 +1,9 @@
 +++
 title = "About Me."
+render = false
 +++
 
+# Not sure what we're doing with this. About page? Or just landing page?
 > **Creative Investigator** ✨ | **Tech Tinkerer** 🛠️ | **Thing Thinkerer** 💡
 
 ## 👋 Hi, I'm Caleb.

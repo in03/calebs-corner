@@ -3,7 +3,7 @@
 
 title = "Caleb Trevatt"
 base_url = "https://calebtrevatt.com"
-description = "Opinionated, modern, pretty, and clean Zola theme."
+description = "A little corner of the internet where I write about things I'm learning."
 
 theme = "duckquill"
 compile_sass = true
@@ -26,7 +26,10 @@ author = "Caleb Trevatt"
 # BCP 47: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 default_language = "en"
 
-taxonomies = [{ name = "tags", feed = true }]
+taxonomies = [
+	{ name = "tags", feed = true },
+	{ name = "categories", feed = true }
+]
 
 [markdown]
 highlight_code = true
@@ -43,7 +46,9 @@ bottom_footnotes = true
 index_format = "fuse_json"
 generate_feeds = true
 
-taxonomies = [{ name = "tags", feed = true }]
+taxonomies = [
+	{ name = "tags", feed = true }
+]
 
 [extra]
 styles = ["mods.css"]
@@ -73,7 +78,7 @@ fix_contrast_dark = true
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
 #
-# emoji_favicon = "🦆🪶"
+emoji_favicon = "👨‍💻"
 #
 # URL to website's issue tracker
 issues_url = "https://github.com/in03/calebs-corner/issues"
@@ -114,7 +119,7 @@ show_backlinks = true
 # Whether to render table of contents on all pages.
 # Will not be rendered if page doesn't have any headings.
 # Can be set per page/section.
-# toc = true
+toc = true
 #
 # Whether to render inline table of contents at the top of all pages,
 # in addition to floating quick navigation buttons.
@@ -147,7 +152,7 @@ show_repo = true
 links = [
 
   {url = "@/blog/_index.md", name = "Articles"},
-  {url = "/about", name = "About"},
+  {url = "/atom.xml", name = "Feed"},
 ]
 
 

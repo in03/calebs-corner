@@ -2,10 +2,12 @@
 title = "AI for the Shell"
 description = "Cross-platform, \"pipable\" AI directly in your terminal. Bring the power of LLMs to your local environment. ⚡️"
 date = 2024-05-30
-[taxonomies]
-tags = ["AI", "Tool", "OpenAI", "Groq"]
+
 [extra]
 banner = "cover.jpg"
+
+[taxonomies]
+tags = ["AI", "Tool", "OpenAI", "Groq"]
 +++
 
 ## What is it?
