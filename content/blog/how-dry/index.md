@@ -6,6 +6,7 @@ date = 2024-06-20
 
 [extra]
 banner = "desert_dev.jpg"
+poor = true
 
 [taxonomies]
 tags = ["AI", "Software dev", "Quick thoughts"]

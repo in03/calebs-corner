@@ -7,6 +7,7 @@ date = 2024-06-16
 
 [extra]
 banner = "cover.jpg"
+poor = true
 
 [taxonomies]
 tags = ["Software dev", "Deep thoughts", "Work", "AI", "Community"]
