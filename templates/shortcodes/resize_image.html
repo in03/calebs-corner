@@ -1,0 +1,12 @@
+{% set image = resize_image(path=path, width=width, height=height, op=op) %}
+{% if align == "left" %}
+<p align="left">
+    <img src="{{ image.url }}" />
+</p>
+{% elif align == "right" %}
+<p align="right">
+    <img src="{{ image.url }}" />
+</p>
+{% else %}
+<img src="{{ image.url }}" />
+{% endif %}
