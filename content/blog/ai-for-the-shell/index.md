@@ -5,6 +5,7 @@ date = 2024-05-30
 
 [extra]
 banner = "cover.jpg"
+hot = true
 
 [taxonomies]
 tags = ["AI", "Tool", "OpenAI", "Groq"]

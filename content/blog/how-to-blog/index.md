@@ -2,7 +2,7 @@
 authors = ["Caleb Trevatt"]
 title = "I think I might suck at blogging..."
 description = "I've given it a good old fashioned try, and I'm not sure I'm doing it right."
-date = 2024-12-08
+date = 2024-12-07
 
 [extra]
 banner = "bloggerboi.webp"

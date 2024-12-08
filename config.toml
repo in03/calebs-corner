@@ -151,9 +151,8 @@ show_repo = true
 # See https://www.getzola.org/documentation/content/linking/#internal-links
 links = [
 
-  {url = "@/blog/_index.md", name = "Articles"},
+  {url = "@/blog/_index.md", name = "Posts"},
   {url = "@/snippets/_index.md", name = "Snippets"},
-  {url = "/atom.xml", name = "RSS"},
 ]
 
 

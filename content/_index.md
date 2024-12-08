@@ -13,10 +13,15 @@ I'm a busy dad, husband, and IT enthusiast.
 I write code, deploy software and read bedtime stories.
 {{ image(url="dave_and_me.jpg", no_hover=true) }}
 
-### What's this place?
+### What is this place?
 
 This is a place where I write about things I'm learning, building, and thinking about.
 I try to keep it light and fun, and I hope you find it useful.
+
+Feel free to poke around 👉 
+
+- [Posts](/blog/) - Long-form thoughts and ideas.
+- [Snippets](/snippets/) - Quick tips and tricks.
 
 ### Wanna Connect?
 - Github: [@in03](https://github.com/in03)
