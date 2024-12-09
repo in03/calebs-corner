@@ -6,6 +6,7 @@ date = 2024-12-08
 [extra]
 banner = "test-engineer.webp"
 hot = true
+draft = true
 
 [taxonomies]
 tags = ["Career", "Roadmap"]
