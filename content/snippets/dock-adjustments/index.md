@@ -1,6 +1,6 @@
 +++
 authors = ["Caleb Trevatt"]
-title = "Dock tweaks"
+title = "Dock Tweaks"
 description = "Some quick dock tweaks. Personal preferences."
 date = 2024-12-09
 
@@ -12,6 +12,11 @@ tags = ["Snippet", "Bash", "Shell Scripting", "macOS"]
 
 ## Disable Dock Autohide Animation
 This tweak wins you back some screen real-estate and makes the dock feel snappier. Following the below makes the dock hidden by default even with non-fullscreened windows. On mouseover, the dock will unhide itself instantly with no animation.
+
+{% alert(tip = true) %}
+These are my personal preferences. 
+I spent a little time digging to get these settings, wrote this post and then found this **immensely useful website** [macOS-defaults.com](https://macos-defaults.com/dock/). Definitely go there for more info on defaults!
+{% end %}
 
 Press <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>D</kbd> to enable autohide.
 
