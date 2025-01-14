@@ -1,7 +1,7 @@
 +++
 title = "The Two Types of Programmers"
 description = "You're not bad at programming; you're bad at unrealistic expectations."
-date = 2024-01-11
+date = 2025-01-11
 
 [extra]
 banner = "craft-vs-result-programmer.webp"
