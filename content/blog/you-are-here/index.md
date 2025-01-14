@@ -7,99 +7,110 @@ date = 2024-12-08
 banner = "test-engineer.webp"
 hot = true
 draft = true
+disclaimer="""
+This article demonstrates how to use AI Always use AI responsibly. Be aware of hallucination. Always fact-check outputs. 
+"""
 
 [taxonomies]
 tags = ["Career", "Roadmap"]
 +++
 
+# Could I be a Test Engineer?
 
-# Context
+## Introduction
 
-This post is the first in a series about forking my career path. I've had a bit of a weird career path, and I've been trying to figure out how to transition into a new role. I've got a lot of broad experience, but also some skillset gaps, depending on the role.
+**This post is first of a planned series that explores the idea of leveraging AI to "try on" different careers.**
 
-So, as a bit of an experiment, I thought I'd ask an LLM to help.
+Like many professionals, I’ve accumulated a broad and eclectic skillset but found myself wondering how to bridge gaps when exploring new opportunities. Using AI as a career co-pilot, I’ll share roadmaps tailored to roles I find fascinating, beginning with this post.
 
-Given my resume, LinkedIn and GitHub profiles, and a job position description, I asked ChatGPT to make me:
+Here’s how I’m using AI:
 
-- A scoring framework for career path compatibility.
-- A roadmap of skills I should learn to transition into the new role.
-- A mermaid diagram of the above roadmap.
-- An adjusted resume and cover letter, tailored to the new role.
+1. Assess my compatibility with a role posted on LinkedIn.
+2. Create a roadmap of skills to bridge gaps in my knowledge.
+3. Generate a mermaid flowchart that visualises the roadmap.
+4. Tailor my resume and cover letter for the role (optional).
 
-**For the record**, I don't want ChatGPT to do any "cheating" for me. I'm not doing this with a mind to apply for jobs I *shouldn't*, I'm doing it so I can apply to more jobs I *should*.
-
-{% alert(warning=true) %}
-LLMs have a tendency to hallucinate. If you're going to do this, make sure to fact-check the output.
-{% end %}
+{% alert(warning=true) %} {% end %}
 
 ---
 
 ## My Background  
 
-I was always interested in computers. 
-I got my first one when I was 12, and it was **terrible**. I learnt a lot just by trying to fix it.
-It wasn't long before I was running Linux on it, destroying the bootloader, and spending hours on community forums trying to get it booting again.
+I’ve always been passionate about technology. I got my first computer at 12. Its performance was shocking... Probably 10 years old when I got it. It barely ran XP, but I was determined to squeeze every last bit of juice out of it. My Dad had heard something about Linux in his sysadmin days and gave me a thick copy of a RedHat manual that was probably 10 years older than the computer. I read that thing late into the night and felt like I'd discovered a whole new world of computing. 
 
-Fast forward a few years and I got really into film and editing. I loved it in high-school, studied it at uni and got into a video editing position at a startup.
+Before long I was running Ubuntu *Jaunty Jackalope* full time.
+My Dad was actually pretty proud of me. Proud enough he mentioned it in his speech at my wedding.
 
-That startup started working on virtual tours, and ended up becoming one of the leading virtual providers in Australia. The process for editing a tour was decidely less creative than a short film or music video. To deal with the tedium I discovered macros and programming. I quickly turned as many of my tasks as possible into automated workflows. That spark led me to software development, then eventually onto IT administration at a high school, where I managed fleets of Apple and Windows devices with tools like Jamf, Intune, and SCCM. Along the way, I picked up CyberSecurity study (still going) and have been diving into the intricacies of keeping systems both secure and functional.
+Computers aside, I grew interested in photography, then videography, then film. I pursued film in high school and university, but the job market in my part of the world was oversaturated and underpaid. Instead, of Hollywood, I found myself working at a startup specialising in [virtual tours](https://uq.youtour.com.au/). Unlike editing feature films, these virtual tours only ever went together in the intended order. I quickly discovered how automation could streamline the repetition. My automations became more advanced and I picked up AutoHotkey 🎹, Javascript ☕️ and Python 🐍 on the way. 
 
-Now, with a growing family and shifting priorities, I’m hunting for roles that let me work remotely, spend more time at home, and—let’s be honest—pay a bit more. While my eclectic background has rounded out my skills and made me a better problem-solver, it’s also left me with gaps that complicate job applications.
+This spark led me to software development and later IT administration at a high school, managing Apple and Windows endpoints using Jamf, Intune, and SCCM. 
 
-So, I had this idea: what if I asked AI to help me bridge those gaps? That’s how this blog series, "You Are Here - AI-Assisted Roadmaps to Alternative Careers," came to life. Each post maps out the skills, tools, and experiences I need to shift into a new role, starting from exactly where I am.
+At time of writing, this is where I remain.
 
-This first post tackles the question: How does someone like me—solid in Python but green in testing—transform into a Test Engineer? Let’s find out.
+Now, with a growing family, I’m on the hunt for a remote-friendly role that offers better work-life balance and financial stability. While my eclectic background has rounded out my skills and made me a better problem-solver, it’s also left me with gaps that complicate job applications. 
 
-## Test Engineer 🧪
+So, I had this idea: what if I asked AI to help me bridge those gaps? 
 
-### Roadmap to Becoming a Test Engineer
+That’s where this blog series comes in — to map out actionable steps for career transitions.
 
-#### Phase 1: Foundations of Software Testing
+---
 
-##### What to Learn:
-- The basics: unit tests, integration tests, regression tests—what they are and why they matter.
-- The Software Development Lifecycle (SDLC) and where testing fits in.
-- Python’s unittest module to write basic tests.
+## Test Engineer: An Overview
 
-##### What to Do:
-- Pick a small Python project and write unit tests for each function.
-- Try out Test-Driven Development (TDD) for a simple script to get hands-on experience.
+Test Engineers ensure the quality and functionality of software through systematic testing processes. They create and execute test plans, identify bugs, and collaborate with developers to improve software reliability. This role is ideal for detail-oriented individuals who enjoy problem-solving and optimizing systems.
 
-#### Phase 2: Tools and Automation
+---
 
-##### What to Learn:
-- Testing frameworks like pytest and nose2.
-- How CI/CD tools (like GitLab CI/CD) automate the testing process.
-- Writing shell scripts to integrate automated testing into workflows.
+## Roadmap to Becoming a Test Engineer
 
-##### What to Do:
-- Set up a GitLab repository with a CI/CD pipeline that runs your tests.
-- Write automation scripts for repetitive tasks like deploying tests across environments.
+### Phase 1: Foundations of Software Testing
 
-#### Phase 3: Advanced Testing Techniques
+**What to Learn:**
+- Unit tests, integration tests, and regression tests: what they are and why they matter.
+- The Software Development Lifecycle (SDLC) and the role of testing.
+- Python’s `unittest` module to write basic tests.
 
-##### What to Learn:
+**What to Do:**
+- Write unit tests for a small Python project.
+- Practice Test-Driven Development (TDD) with simple scripts.
+
+### Phase 2: Tools and Automation
+
+**What to Learn:**
+- Testing frameworks like `pytest` and `nose2`.
+- CI/CD tools (e.g., GitLab CI/CD) for automated testing.
+- Writing shell scripts to integrate automated tests into workflows.
+
+**What to Do:**
+- Set up a GitLab repository with a CI/CD pipeline that runs tests.
+- Automate repetitive tasks like test deployments using scripts.
+
+### Phase 3: Advanced Testing Techniques
+
+**What to Learn:**
 - Shift-left testing: catching bugs early in the pipeline.
-- Performance and security testing basics.
-- Dockerized testing environments for seamless deployment.
+- Basics of performance and security testing.
+- Setting up Dockerized testing environments.
 
-##### What to Do:
-- Mock APIs in integration tests using Python tools like responses.
-- Test a Python-based web app using Selenium or Locust for performance insights.
+**What to Do:**
+- Use Python tools like `responses` to mock APIs in integration tests.
+- Test a Python web app’s performance with tools like Selenium or Locust.
 
-#### Phase 4: Collaboration and Open Source
+### Phase 4: Collaboration and Open Source
 
-##### What to Learn:
-- How testing works in collaborative teams (hint: lots of documentation).
-- Best practices for quality assurance in large projects.
+**What to Learn:**
+- Documentation practices in collaborative testing environments.
+- Quality assurance strategies in large projects.
 
-##### What to Do:
-- Contribute tests or bug fixes to an open-source project.
-- Add these projects to a portfolio to showcase your testing chops.
+**What to Do:**
+- Contribute to an open-source project by writing or improving test cases.
+- Build a portfolio showcasing your contributions and testing expertise.
 
-### Skill Development Plan
+---
 
-Here’s a mermaid visualisation of what the above might look like in practice.
+## Visualizing the Plan
+
+Here’s a roadmap of the above plan:
 
 ```mermaid
 graph LR
@@ -114,3 +125,19 @@ graph LR
   I --> J[Dockerized Testing Environments]
   D --> K[Contribute to Open-Source Projects]
   K --> L[Build Portfolio]
+```
+
+---
+
+## Final Thoughts
+
+Embarking on a career transition can feel overwhelming, but breaking the journey into phases makes it manageable. By focusing on foundational knowledge, hands-on practice, and collaboration, anyone—including me—can work toward becoming a Test Engineer.
+
+If you’ve walked this path or have resources to share, I’d love to hear your insights in the comments. Stay tuned for the next post in this series, where I’ll tackle another role with the help of AI!
+
+---
+
+{% alert(warning=true) %}
+LLMs can provide useful insights but are not foolproof. Validate the output before acting on it.
+{% end %}
+
