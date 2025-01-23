@@ -2,8 +2,6 @@
 title = "Trailblazer"
 description = "Thoughts on words and stuff."
 date = 2024-12-11
-
-[extra]
 draft = true
 
 [taxonomies]
