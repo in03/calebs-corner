@@ -7,7 +7,7 @@ date = 2025-01-22
 banner = "Obsidian Gem Illustration.webp"
 
 [taxonomies]
-tags = ["Project", "Obsidian", "Software"]
+tags = ["Project", "Obsidian", "AI", "Software"]
 +++
 
 
