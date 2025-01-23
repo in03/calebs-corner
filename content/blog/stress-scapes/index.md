@@ -5,6 +5,7 @@ date = 2025-01-19
 
 [extra]
 banner = "lofi-stress-scape.webp"
+hot = true
 
 [taxonomies]
 tags = ["Project", "Music", "SFX", "AI", "ElevenLabs"]

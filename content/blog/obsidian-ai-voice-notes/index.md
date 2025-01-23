@@ -5,6 +5,7 @@ date = 2025-01-22
 
 [extra]
 banner = "Obsidian Gem Illustration.webp"
+featured = true
 
 [taxonomies]
 tags = ["Project", "Obsidian", "AI", "Software"]
