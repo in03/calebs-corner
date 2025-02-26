@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmer Archetype Slider</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .slider-container {
+            margin: 60px 0 40px;
+            position: relative;
+        }
+
+        .slider {
+            width: 100%;
+            height: 4px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: linear-gradient(to right, #4a90e2, #e74c3c);
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 2px solid #666;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ticks {
+            position: absolute;
+            width: 97.25%;
+            height: 10px;
+            top: -3px;
+            left: 11.6px;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .tick {
+            width: 2px;
+            height: 10px;
+            background: #666;
+            position: relative;
+        }
+
+        .labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .archetype-indicator {
+            text-align: center;
+            font-size: 1.8em;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="ticks">
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+            <div class="tick"></div>
+        </div>
+        <input type="range" min="0" max="1500" value="750" step="100" class="slider" id="archetypeSlider">
+        <div class="labels">
+            <span>Craft</span>
+            <span>Result</span>
+        </div>
+    </div>
+    <div class="archetype-indicator" id="archetypeIndicator">Level 4</div>
+    <div class="content" id="content"></div>
+
+    <script>
+                const archetypes = {
+            craft: {
+                8: [
+                    "Speak in hex, dream in binary.",
+                    "Legend says they exist only in pure mathematics.",
+                    "Write their own typesetting systems because existing ones can't kern \"quite right\".",
+                    "Probably created the simulation you're living in.",
+                    "<strong>Example:</strong> Donald Knuth, creator of TeX."
+                ],
+                7: [
+                    "Consider most programming languages too high-level.",
+                    "Invent languages no one ask for but everyone ends up needing.",
+                    "Bare-metal boffins. Can tell what code is running just by listening to the CPU.",
+                    "Can write a white paper faster than you can plug a USB stick in the right way.",
+                    "<strong>Example:</strong> Ken Thompson, who wrote Unix in assembly, and co-created C."
+                ],
+                6: [
+                    "You've probably never met one. They don't go outside.",
+                    "Hermits of the terminal. Code in isolation, shrouded in mystery.",
+                    "Reject all tools and conveniences. Build everything from scratch.",
+                    "Don't need version control; perfect on release.",
+                    "<strong>Example:</strong> Mystery Creator of BitCoin: 'Satoshi Nakamoto'."
+                ],
+                5: [
+                    "Guardians of the sacred flame of code purity.",
+                    "Maintain 30-year-old codebases like 30-year-old children who never leave home.",
+                    "Fear tech debt more than financial debt.",
+                    "Plan to be cryogenically frozen so their knowledge can one day save humanity.",
+                    "<strong>Example:</strong> Bram Moolenaar, Vim BDFL and fearless defender of modal editing."
+                ],
+                4: [
+                    "Gatekeepers of code. Pedantic to the point of obsession.",
+                    "Treat pull requests like wordy suggestions with examples.",
+                    "Only accept patches via arcane rituals, like plain-text email.",
+                    "If it's not C-like, it isn't real programming.",
+                    "<strong>Example:</strong> Terry Davis who built an OS... as the prophesied Third Temple of God."
+                ],
+                3: [
+                    "Zealots of software freedom. Write manifestos first, code second.",
+                    "Frequently fork projects over philosophical disagreements.",
+                    "Reverse engineer printer drivers to using proprietarty software.",
+                    "Don't use IDEs. Synethesia grants them syntax highlighting.",
+                    "<strong>Example:</strong> Richard Stallman, GNU project founder."
+                ],
+                2: [
+                    "<i>\"I use Arch, btw\"</i>",
+                    "Artisans. Reinvent wheels for fun.",
+                    "Indentation-based languages make them queasy.",
+                    "Pull requests are just wordy feature suggestions that must be rewritten.",
+                    "<strong>Example:</strong> Linus Torvalds, renowned for perfectionism and ruthlessness."
+                ],
+                1: [
+                    "<i>\"It's GNU/Linux.\"</i>",
+                    "Quality-focused pragmatists. Maintain balance between elegance and practicality.",
+                    "Open-source contributors who care about maintainability.",
+                    "Often serve as maintainers or code reviewers",
+                    "<strong>Example:</strong> The average Hacker News commentator."
+                ]
+            },
+            result: {
+                8: [
+                    "Ship to production from Google Docs.",
+                    "Trust Grammarly to catch syntax errors.",
+                    "Documentation consists of a mood board and inline \"TODO:\" comments.",
+                    "The real code is the friends we made along the way.",
+                    "<strong>Example:</strong> Sam Bankman-Fried (FTX), who ran a billion-dollar exchange using spreadsheets."
+                ],
+                7: [
+                    "<i>\"Move fast, break everything.\"</i>",
+                    "Deploy untested code straight to production.",
+                    "Consider testing masochism.",
+                    "Documentation is whatever you tell investors.",
+                    "<strong>Example:</strong> Do Kwon (Terra/LUNA). Launched massive financial systems with minimal validation."
+                ],
+                6: [
+                    "Trailblazers. Change industries at any cost.",
+                    "Move so fast they leave ethics, bugs, and laws behind.",
+                    "Write code with actual spaghetti. Throw it at the wall and see what sticks.",
+                    "Refactor only if something's on fire.",
+                    "<strong>Example:</strong> Elizabeth Holmes (Theranos), catastrophically result focussed."
+                ],
+                5: [
+                    "<i>\"Ask forgiveness, not permission\"</i>",
+                    "Release features before they're fully tested.",
+                    "Technical debt is future you's problem.",
+                    "Regulation is just another backlog item.",
+                    "<strong>Example:</strong> Travis Kalanick (early Uber)"
+                ],
+                4: [
+                    "<i>\"Move fast, break things\"</i>",
+                    "Fast and Furious. MVPs first, tech debt later.",
+                    "If the user can't see it, it doesn't need attention.",
+                    "Write most of their code through an LLM.",
+                    "<strong>Example:</strong> Mark Zuckerberg (early Facebook)."
+                ],
+                3: [
+                    "Ship now, secure later.",
+                    "Versioning through file names: final_v2_REAL_final.js",
+                    "Want to use the newest AI tools in everything, even if impractical.",
+                    "If it compiles, it ships.",
+                    "<strong>Example:</strong> Late John McAfee."
+                ],
+                2: [
+                    "Pragmatic builders. Get things working now; refine later.",
+                    "Early adopters of new tools. Beta testers.",
+                    "Not afraid of high semver numbers.",
+                    "\"<i>Good enough beats perfect never.</i>\"",
+                    "<strong>Example:</strong> Elon Musk."
+                ],
+                1: [
+                    "Practical developers. Balance speed with usability.",
+                    "Focus on results, not process.",
+                    "Leverage existing tools for creative solutions.",
+                    "Frequently in startups, hackathons, or making tutorials.",
+                    "<strong>Example:</strong> Most people in GitHub discussions."
+                ]
+            }
+        };
+
+        const slider = document.getElementById('archetypeSlider');
+        const content = document.getElementById('content');
+        const archetypeIndicator = document.getElementById('archetypeIndicator');
+
+        function updateContent(value) {
+            const normalizedValue = value / 1500;
+            let archetype, level;
+            
+            if (normalizedValue < 0.5) {
+                archetype = 'craft';
+                level = Math.ceil((0.5 - normalizedValue) * 16);
+            } else {
+                archetype = 'result';
+                level = Math.ceil((normalizedValue - 0.5) * 16);
+            }
+            level = Math.min(Math.max(level, 1), 8);
+            const items = archetypes[archetype][level];
+            const title = `${archetype === 'craft' ? '🧐 \"Craft\"' : '🤓 \"Result\"'} Archetype`;
+            content.innerHTML = `
+                <h3>Level ${level}</h3>
+                <ul>
+                    ${items.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            `;
+            archetypeIndicator.textContent = title;
+        }
+
+        slider.addEventListener('input', (e) => updateContent(e.target.value));
+        updateContent(750); // Initial content
+    </script>
+</body>
+</html>
