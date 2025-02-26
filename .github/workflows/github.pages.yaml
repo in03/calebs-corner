@@ -47,7 +47,8 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build with Zola
         run: |
-                    zola build
+          zola build
+          ls -la public/ || echo "Public directory is empty or missing!"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -63,4 +64,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
