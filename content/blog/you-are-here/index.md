@@ -30,7 +30,17 @@ Here’s how I’m using AI:
 3. Generate a mermaid flowchart that visualises the roadmap.
 4. Tailor my resume and cover letter for the role (optional).
 
-{% alert(warning=true) %} {% end %}
+{% alert(warning=true) %} 
+While AI can provide valuable insights and suggestions, it's important to approach its career guidance with a critical mindset. AI models can have biases, make mistakes, or provide outdated information. Always verify AI-generated advice through:
+
+- Industry professionals
+- Official documentation
+- Recent job postings
+- Professional communities
+
+This series demonstrates one way to use AI as a career exploration tool, but should not be your only source of guidance. Make informed decisions by combining AI insights with real-world research and networking.
+
+{% end %}
 
 ---
 
@@ -134,10 +144,3 @@ graph LR
 Embarking on a career transition can feel overwhelming, but breaking the journey into phases makes it manageable. By focusing on foundational knowledge, hands-on practice, and collaboration, anyone—including me—can work toward becoming a Test Engineer.
 
 If you’ve walked this path or have resources to share, I’d love to hear your insights in the comments. Stay tuned for the next post in this series, where I’ll tackle another role with the help of AI!
-
----
-
-{% alert(warning=true) %}
-LLMs can provide useful insights but are not foolproof. Validate the output before acting on it.
-{% end %}
-
