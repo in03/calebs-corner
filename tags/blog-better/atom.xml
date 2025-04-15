@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Blog Better</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/blog-better/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-07T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/blog-better/atom.xml</id>
+    <entry xml:lang="en">
+        <title>I think I might suck at blogging...</title>
+        <published>2024-12-07T00:00:00+00:00</published>
+        <updated>2024-12-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Caleb Trevatt
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/how-to-blog/"/>
+        <id>https://calebtrevatt.com/blog/how-to-blog/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/how-to-blog/">&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;I changed my theme recently. I actually changed my whole website. I was wrestling with some build issues in Hugo, so I switched to Zola. So far, so good.&lt;&#x2F;p&gt;
+&lt;p&gt;In porting my old posts, I realised they were &lt;strong&gt;Very Poor Quality&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I was a bit disappointed to find out how much even I didn’t want to read these posts 6 months later.
+Clearly I needed to work on this if I was going to ramp it up again. So, like many of modern first-world problems, I took it to ChatGPT with a kind of hopeful curiousity it would give me a magic solution:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I’ve tried to get into blogging, but whenever I start, the blog post gets way too big, the meaning gets mushy and even I wouldn’t want to read it. I’ve got three or four so far and they’re all enormous and &lt;strong&gt;really boring&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;They also take a huge amount of effort. And my post frequency has gone way down because of it. I guess that’s becayse I’ve started dreading doing it.&lt;&#x2F;p&gt;
+&lt;p&gt;I want my posts to be meaningful. First and foremost to me. I want my blogging to be an extension of my note taking, but be the really important or useful&#x2F;thoughtful stuff that helps others, or stuff I really want to highlight to myself so I don’t forget.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;How do I blog better?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Help me, Obi-Wan Kenobi. You’re my only hope.&lt;&#x2F;del&gt;“&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;the-solution&quot;&gt;The Solution&lt;&#x2F;h1&gt;
+&lt;p&gt;Thus, the Oracle responded:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“It sounds like you’re caught in the common trap of over-ambition when blogging, where the desire for perfection or depth makes the process unwieldy and unenjoyable. Here’s a framework to help you blog better”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;a-better-blogging-framework&quot;&gt;A Better Blogging Framework&lt;&#x2F;h2&gt;
+&lt;p&gt;It sounds like you’re caught in the common trap of over-ambition when blogging, where the desire for perfection or depth makes the process unwieldy and unenjoyable. Here’s a framework to help you blog better:&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;1-redefine-what-meaningful-means-thought-balloon&quot;&gt;1. Redefine What “Meaningful” Means 💭&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A post doesn’t have to be exhaustive to be meaningful. Focus on &lt;strong&gt;one insight, idea, or question per post&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Your blog can serve as &lt;strong&gt;“working thoughts”&lt;&#x2F;strong&gt; rather than finished masterpieces. Treat it as an ongoing conversation with yourself and your readers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Definitely struggled with this one. I would start a post, and then think “well, I should probably expand on this, or add this, or include that…” and then I’d end up with a massive post that didn’t really adhere to the idea I wanted to share. It would just become a preachy jumble of thoughts.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;2-start-small-and-specific-memo&quot;&gt;2. Start Small and Specific 📝&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Break your ideas into smaller pieces.&lt;&#x2F;strong&gt; If your draft is massive, split it into a series of posts. For example:
+&lt;ul&gt;
+&lt;li&gt;Post 1: The problem or context.&lt;&#x2F;li&gt;
+&lt;li&gt;Post 2: An insight or solution.&lt;&#x2F;li&gt;
+&lt;li&gt;Post 3: Reflection or practical application.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Agree 👍 I think if I can exercise #1 properly, I won’t actually need to do this often. Unless it’s a great topic worth a lot of conversation.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;3-write-for-your-past-self-child-arrow-left&quot;&gt;3. Write for Your Past Self 🧒 ⬅️&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Imagine you’re writing to help a version of yourself from 6-12 months ago. This will:
+&lt;ul&gt;
+&lt;li&gt;Sharpen your focus.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep the content relatable and actionable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Interesting. I took the popularity of the &lt;em&gt;Learning in Public&lt;&#x2F;em&gt; movement as permission to write publicly as a non-expert, but I keep finding myself writing as if I &lt;em&gt;am&lt;&#x2F;em&gt; an expert. Maybe that’s an &lt;strong&gt;ego-check&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;4-use-templates-to-structure-posts-page-facing-up&quot;&gt;4. Use Templates to Structure Posts 📄&lt;&#x2F;h3&gt;
+&lt;p&gt;A template can help keep your writing concise and focused:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Hook&lt;&#x2F;strong&gt;: Why this topic matters (1-2 sentences).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Main Idea&lt;&#x2F;strong&gt;: What’s the core point you’re sharing?&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Supporting Points&lt;&#x2F;strong&gt;: 2-3 short paragraphs that back it up.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reflection or Call to Action&lt;&#x2F;strong&gt;: What’s the takeaway? How can this help others or yourself in the future?&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’ve never done this. I’ve always just written. I’ll give it a shot.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;5-limit-writing-time-alarm-clock&quot;&gt;5. Limit Writing Time ⏰&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Set a timer for 30-60 minutes.&lt;&#x2F;strong&gt; Treat it as an experiment in speed and clarity.&lt;&#x2F;li&gt;
+&lt;li&gt;Publish after one or two edits. Imperfect but consistent posts are better than perfect ones that never happen.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I really like this idea. I’ve been getting into the Pomodoro Technique recently and I’m finding it really helps. This could be a healthy application of the same principles.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;6-treat-your-blog-like-a-curation-space-books&quot;&gt;6. Treat Your Blog Like a Curation Space 📚&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If a full blog post feels too heavy, share:
+&lt;ul&gt;
+&lt;li&gt;A key takeaway from a book or podcast.&lt;&#x2F;li&gt;
+&lt;li&gt;A solution to a problem you solved at work.&lt;&#x2F;li&gt;
+&lt;li&gt;A reflective “aha moment” in a few paragraphs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;These smaller posts still add value and showcase your thinking.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Really good idea.&lt;&#x2F;strong&gt; I’ve done that a little for social media (LinkedIn and Twitter) but I hadn’t practiced that with blogging.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;7-iterate-and-expand-later&quot;&gt;7. Iterate and Expand Later&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A blog post doesn’t have to be a final product. Treat it like a &lt;strong&gt;“version 1.0”&lt;&#x2F;strong&gt; that you can refine or expand over time.&lt;&#x2F;li&gt;
+&lt;li&gt;Link posts together, turning smaller pieces into a cohesive body of work.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While I like the idea, I think I lack the discipline to practice it. I’ve mentioned things I want to cover at the end of previous posts, and then never got back to them. Maybe I’d rework this as #2. If I think it needs to be expanded, I’ll either make sure I’m really committed to finishing it or I’ll draft the post and split it up once the whole series is finished.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;8-write-what-you-d-want-to-read&quot;&gt;8. Write What You’d Want to Read&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use bullet points, bold headings, and concise sentences.&lt;&#x2F;strong&gt; These make posts more readable and less intimidating to write.&lt;&#x2F;li&gt;
+&lt;li&gt;Ask yourself: “If I stumbled upon this, would I read it?”&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Definitely have not been doing that. Clearly 😂&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;9-use-feedback-loops&quot;&gt;9. Use Feedback Loops&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Share drafts with trusted peers or mentors for feedback. Their perspective can help you identify mushy sections.&lt;&#x2F;li&gt;
+&lt;li&gt;Analytics can also reveal which posts resonate most.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;👍&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;10-remember-blogging-is-practice&quot;&gt;10. Remember: Blogging Is Practice&lt;&#x2F;h3&gt;
+&lt;p&gt;Every post improves your ability to communicate ideas effectively. Even “boring” or “imperfect” ones are a step forward.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🤗&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;next-steps&quot;&gt;Next Steps&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose one of your &lt;del&gt;massive drafts&lt;&#x2F;del&gt; junky old posts. Extract a single idea and rewrite it using the template above.&lt;&#x2F;li&gt;
+&lt;li&gt;Publish it quickly. Don’t overthink it.&lt;&#x2F;li&gt;
+&lt;li&gt;Commit to a smaller post for your next one to build momentum.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;By focusing on these practices, you’ll find blogging more manageable and rewarding while steadily building a meaningful portfolio of posts that reflect your growth.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;&#x2F;h1&gt;
+&lt;p&gt;I doubt you’re reading this because you want &lt;em&gt;my&lt;&#x2F;em&gt; thoughts on blogging.
+If you wanted help with blogging, you could have asked ChatGPT yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;You know that. I know that. So why did I write this at all?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;To keep me accountable.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I may not follow to the letter, but if it’s here amongst my other posts to keep me in check.&lt;&#x2F;p&gt;
+&lt;div class=&quot;crt scanlines&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Remember...
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                                             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt; _____     _                        _        _       _             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|     |___| |_ ___    ___ ___ ___ _| |   ___| |_ ___|_|___ ___ ___ 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;| | | | .&amp;#39;| &amp;#39;_| -_|  | . | . | . | . |  |  _|   | . | |  _| -_|_ -|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|_|_|_|__,|_,_|___|  |_  |___|___|___|  |___|_|_|___|_|___|___|___|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                     |___|                                         
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>

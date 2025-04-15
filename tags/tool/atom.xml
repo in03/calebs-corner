@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Tool</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/tool/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-05-30T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/tool/atom.xml</id>
+    <entry xml:lang="en">
+        <title>AI for the Shell</title>
+        <published>2024-05-30T00:00:00+00:00</published>
+        <updated>2024-05-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Caleb Trevatt
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/ai-for-the-shell/"/>
+        <id>https://calebtrevatt.com/blog/ai-for-the-shell/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/ai-for-the-shell/">&lt;h2 id=&quot;what-is-it&quot;&gt;What is it?&lt;&#x2F;h2&gt;
+&lt;p&gt;AI integration is becoming ubiquitous. Warp is pioneering “the terminal of the future” with AI capabilities built-in. VS Code supports extensions like Github Copilot and Cody, while Zed includes Zed AI. But what if you need a simple, versatile tool to bring AI into any conversation? Checkout &lt;strong&gt;Mods&lt;&#x2F;strong&gt;. Charm’s dev team and community are on a roll, producing some awesome new apps and libraries, and this is no exception. 👀&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;calebtrevatt.com&#x2F;blog&#x2F;ai-for-the-shell&#x2F;mods_img.png&quot; alt=&quot;Credit: Charmbracelet&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Mods takes the concept of prompting a GPT and brings it to the command line. It even supports piping stdin and stdout!
+Any output from any command on your terminal, think &lt;code&gt;ls&lt;&#x2F;code&gt;, &lt;code&gt;cat&lt;&#x2F;code&gt;, &lt;code&gt;curl&lt;&#x2F;code&gt; and the like, can become input for Mods. Prompt it with some instructions on how to handle that data and you can either get rich feedback in your terminal or pipe the output for further processing.&lt;&#x2F;p&gt;
+&lt;p&gt;Curious? Here are some examples!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;rich-markdown-output&quot;&gt;Rich Markdown Output&lt;&#x2F;h3&gt;
+&lt;p&gt;Mods supports rich colour and formatting out-of-the-box. Install Charm’s Glow, set the default output format to markdown and every response will be pretty. ✨&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;calebtrevatt.com&#x2F;blog&#x2F;ai-for-the-shell&#x2F;pokemon.gif&quot; alt=&quot;Disclaimer: I don’t know anything about Pokemon 😬&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;evaluate-script-security&quot;&gt;Evaluate Script Security&lt;&#x2F;h3&gt;
+&lt;p&gt;How about those inherently-unsafe one-liner shell script installers? Now finally safe with Mods! Here’s an example in WSL Ubuntu:
+&lt;img src=&quot;https:&#x2F;&#x2F;calebtrevatt.com&#x2F;blog&#x2F;ai-for-the-shell&#x2F;oneliner.gif&quot; alt=&quot;Easily get a second opinion on shell script safety.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;piping-github-api-data&quot;&gt;Piping GitHub API Data&lt;&#x2F;h3&gt;
+&lt;p&gt;Feed it raw JSON data from an API. Here it is running in good old Powershell 5 on Windows 10:
+&lt;img src=&quot;https:&#x2F;&#x2F;calebtrevatt.com&#x2F;blog&#x2F;ai-for-the-shell&#x2F;rate-repo.gif&quot; alt=&quot;Shameless plug for my cheeky repo.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;piping-to-text-to-speech&quot;&gt;Piping to Text-to-Speech&lt;&#x2F;h3&gt;
+&lt;p&gt;What about some text to speech? We can pipe stdout to a text to speech engine. Here’s a little example with Wsay, a Windows equivalent to “Say” on MacOS: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;p-groarke&#x2F;wsay&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;p-groarke&#x2F;wsay&lt;&#x2F;a&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;calebtrevatt.com&#x2F;blog&#x2F;ai-for-the-shell&#x2F;tts.gif&quot; alt=&quot;Duck haikus for life&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote class=&quot;tip&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
+	&lt;p&gt;It might be worth considering something a little more natural if you want it to read you bedtime stories. &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pndurette&#x2F;gTTS&quot;&gt;Google text-to-speech&lt;&#x2F;a&gt; might be a better option.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;audio controls&gt;
+  &lt;source src=&quot;tts_limerick.wav&quot; type=&quot;audio&#x2F;wav&quot;&gt;
+  Your browser does not support the audio element.
+&lt;&#x2F;audio&gt;
+&lt;h3 id=&quot;calling-in-a-loop&quot;&gt;Calling in a Loop&lt;&#x2F;h3&gt;
+&lt;p&gt;You can even call it in a loop! This will ask for 10 fresh duck haikus. Each iteration is a new conversation. No conversational context; guaranteed freshness. 🍃&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell z-code&quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-comment z-line z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-powershell&quot;&gt;#&lt;&#x2F;span&gt; 10 🦆 haikus straight to your speakers!&lt;span class=&quot;z-punctuation z-definition z-comment z-powershell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-constant z-numeric z-integer z-powershell&quot;&gt;1&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-range z-powershell&quot;&gt;..&lt;&#x2F;span&gt;&lt;span class=&quot;z-constant z-numeric z-integer z-powershell&quot;&gt;10&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-other z-powershell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-control z-powershell&quot;&gt;%&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-scriptblock z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-braces z-begin z-powershell&quot;&gt;{&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Tell me a haiku about ducks&lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-other z-powershell&quot;&gt;|&lt;&#x2F;span&gt; mods &lt;span class=&quot;z-keyword z-operator z-other z-powershell&quot;&gt;|&lt;&#x2F;span&gt; wsay &lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;-&lt;&#x2F;span&gt;o duck_haiku&lt;span class=&quot;z-support z-variable z-automatic z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-powershell&quot;&gt;$&lt;&#x2F;span&gt;_&lt;span class=&quot;z-variable z-other z-member z-powershell&quot;&gt;.wav&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-section z-braces z-end z-powershell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And in Bash, like so:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-keyword z-control z-loop z-for z-shell&quot;&gt;for&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-for z-shell&quot;&gt; i &lt;span class=&quot;z-keyword z-control z-in z-shell&quot;&gt;in&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-group z-expansion z-brace z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;1..10&lt;span class=&quot;z-punctuation z-section z-expansion z-brace z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-keyword z-control z-loop z-do z-shell&quot;&gt;do&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;        &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-echo z-shell&quot;&gt;echo&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Haiku time!&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;mods&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;gtts-cli&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; -&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;output&lt;&#x2F;span&gt; duck_haiku&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;i&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;.mp3&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-keyword z-control z-loop z-end z-shell&quot;&gt;done&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;For more examples check out the official ones from &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;charmbracelet&#x2F;mods&#x2F;blob&#x2F;main&#x2F;examples.md&quot;&gt;the Mods repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;multi-llm-support&quot;&gt;Multi LLM Support&lt;&#x2F;h2&gt;
+&lt;p&gt;Mods supports multiple Large Language Models (LLMs) through multiple providers. Providing an OpenAI API key gets you a pretty quick out-of-box experience. It’s already set up to use OpenAI’s GPT-4 by default.&lt;&#x2F;p&gt;
+&lt;p&gt;Pop open the settings with:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;mods --settings&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Note, you’ll have to define a default &lt;code&gt;$EDITOR&lt;&#x2F;code&gt; in your environment variables.&lt;&#x2F;p&gt;
+&lt;p&gt;You’ll be greeted with the &lt;em&gt;mods.yml&lt;&#x2F;em&gt; file. Check out the APIs section. Mods supports:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;OpenAI&lt;&#x2F;strong&gt;: GPT-4O, GPT-4, GPT-3.5-Turbo, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Azure&lt;&#x2F;strong&gt;: GPT-4O, GPT-4, GPT-3.5-Turbo, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Perplexity AI&lt;&#x2F;strong&gt;: CodeLlama, Mistral, Claude 3, Sonar, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Groq&lt;&#x2F;strong&gt;: Mixtral, Llama 2, Llama 3, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;RunPod&lt;&#x2F;strong&gt;: OpenChat, Ollama, etc (IaaS&#x2F;SaaS)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Local&lt;&#x2F;strong&gt;: Llama.cpp, GPT4ALL.cpp, etc. (local - GPU optional!)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;Until today, I’d never tried Groq. Boy is it fast! Evidently, Groq provides &lt;a href=&quot;https:&#x2F;&#x2F;www.semianalysis.com&#x2F;p&#x2F;groq-inference-tokenomics-speed-but&quot;&gt;significantly faster inference&lt;&#x2F;a&gt; through next-gen hardware: Language Processing Units (LPUs).&lt;&#x2F;p&gt;
+&lt;p&gt;API access is free, at least for now. I couldn’t find any official pricing anywhere. My guess is they’re relying on the free access to spread the word so they sell their chips 🍟💲&lt;&#x2F;p&gt;
+&lt;p&gt;Check it out: &lt;a href=&quot;https:&#x2F;&#x2F;groq.com&#x2F;?ref=ghost.notablegravity.com&quot;&gt;https:&#x2F;&#x2F;groq.com&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;yaml&quot; class=&quot;language-yaml z-code&quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-line z-number-sign z-yaml&quot;&gt;#&lt;&#x2F;span&gt; Default model (gpt-3.5-turbo, gpt-4, ggml-gpt4all-j...).
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;default-model&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;gpt-4&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-other z-document z-end z-yaml&quot;&gt;...&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;apis&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;openai&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;base-url&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;https:&#x2F;&#x2F;api.openai.com&#x2F;v1&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;api-key&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;api-key-env&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;OPENAI_API_KEY&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;models&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;      &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;gpt-4&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;aliases&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-flow-sequence z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-sequence z-begin z-yaml&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-yaml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;4&lt;span class=&quot;z-punctuation z-definition z-string z-end z-yaml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-sequence z-end z-yaml&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;max-input-chars&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-integer z-decimal z-yaml&quot;&gt;24500&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;fallback&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;gpt-3.5-turbo&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;      &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;gpt-4-1106-preview&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;aliases&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-flow-sequence z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-sequence z-begin z-yaml&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-yaml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;128k&lt;span class=&quot;z-punctuation z-definition z-string z-end z-yaml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-sequence z-end z-yaml&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;max-input-chars&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-integer z-decimal z-yaml&quot;&gt;392000&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;        &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;fallback&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;gpt-4&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-other z-document z-end z-yaml&quot;&gt;...&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Configuration is the same for all providers. Provide the base url, desired models, and specify aliases for those models. If you want to use a specific model, call it like this:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;&quot;What is gravity?&quot; | mods --model=&quot;Mixtral&quot;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can also supply &lt;code&gt;-M&lt;&#x2F;code&gt; or &lt;code&gt;--Ask-Model&lt;&#x2F;code&gt; to interactively choose a model (though this seems to be ignored if you pass a prompt non-interactively).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conversational-memory&quot;&gt;Conversational Memory&lt;&#x2F;h2&gt;
+&lt;p&gt;Nice! Now when I was generating haikus I hard-sold amneisa as a feature for conversational freshness. What if we wanted to remember conversations across commands? Maybe with something more complicated… Something that can’t be done “zero-shot”?&lt;&#x2F;p&gt;
+&lt;p&gt;Well thankfully Mods has some handy parameters that allow resuming and managing conversations:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; class=&quot;language-yaml z-code&quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-c, --continue       Continue from the last response or a given save title.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-C, --continue-last  Continue from the last response.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-l, --list           Lists saved conversations.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-t, --title          Saves the current conversation with the given title.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-d, --delete         Deletes a saved conversation with the given title or ID.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-s, --show           Show a saved conversation with the given title or ID.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;-S, --show-last      Show the last saved conversation.&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;a-really-heavy-example&quot;&gt;A Really Heavy Example&lt;&#x2F;h3&gt;
+&lt;p&gt;Here’s a PowerShell commandlet I made (along with 59 other functions necessary to make it work). I use it to provision temporary user accounts for student exams at my workplace.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;New-Exam -D 10&#x2F;03 -FT 8 -TT 11 -Alloc 105 -U 5 -CC &quot;10SCI&quot;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My bespoke exam provisioning commandlet&lt;&#x2F;p&gt;
+&lt;p&gt;For the sake of your screen real-estate I’ve used the parameter aliases, but I will explain in a moment!&lt;&#x2F;p&gt;
+&lt;p&gt;Essentially this commandlet:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sets Active Directory account logon hours&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sets account expiration time&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sets group membership (for exam conditions)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Validates users by name or student ID and fetches AD attributes&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Populates an HTML login sheet template with user data and exam details&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Merges the sheets into a PDF&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And it saves me &lt;strong&gt;HOURS.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But one thing remains that sucks like a parasite at my remaining time and brain power:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;The exam login requests themselves.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The problem is that login reqeuests aren’t consistent. Requests come in all shapes and sizes. Some come with multiple updates across a chain of emails. Some come in concise bullet points. Some say “next Wednesday”. Others say “19&#x2F;05&#x2F;2024”.&lt;&#x2F;p&gt;
+&lt;p&gt;What an excellent opportunity for AI – and for Mods!&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;interfacing-with-the-commandlet&quot;&gt;Interfacing with the Commandlet&lt;&#x2F;h4&gt;
+&lt;p&gt;So first I told Mods how to commandlet. works and the inputs and outputs I expect:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell z-code&quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-powershell&quot;&gt;$&lt;&#x2F;span&gt;Instructions&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;New-Exam is a powershell commandlet.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; It is used to create temporary Active Directory accounts for exams.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Here&amp;#39;s an example:
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; New-Exam -D 10&#x2F;03 -FT 8 -TT 11 -U 5 -S &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;10SCI&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt; -C
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -D is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;date&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -FT is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-control z-powershell&quot;&gt;from&lt;&#x2F;span&gt; time&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -TT is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;to time&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -U is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;user count&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -S is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;subject&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; -C is &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;conditions&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt; (do not include)
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Follow the format of the example.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Output the exact command to run, no extra information or context.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; If data is missing or invalid, output:
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; &amp;#39;echo &lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;Invalid &lt;span class=&quot;z-keyword z-control z-powershell&quot;&gt;data&lt;&#x2F;span&gt;: &lt;span class=&quot;z-constant z-numeric z-integer z-powershell&quot;&gt;___&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt; 
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; where blank is the invalid or missing data.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-powershell&quot;&gt;$&lt;&#x2F;span&gt;Instructions&lt;&#x2F;span&gt; | mods --title=&lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;New Exam&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;“Conditions” above I asked it not to include. The conditions aren’t difficult to pass, but for the sake of experimentation I left them out. Fortunately, if a mandatory parameter is left out of a PowerShell commandlet it will be prompted at runtime. Good to know!&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;h4 id=&quot;pushing-jobs&quot;&gt;Pushing Jobs&lt;&#x2F;h4&gt;
+&lt;p&gt;Then I gave it an exam login request email.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;powershell&quot; class=&quot;language-powershell z-code&quot;&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-powershell&quot;&gt;$&lt;&#x2F;span&gt;Message&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Hi IT team!
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; We have a science exam on tomorrow.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; 
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Please can we have four logins?
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; - Disable internet
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; - No USB access
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; - They can have spellcheck
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Start: 10:30, Finish: 12PM
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Kind regards,
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&amp;gt; Dane Joe&lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-powershell&quot;&gt;$ Message &lt;span class=&quot;z-keyword z-operator z-other z-powershell&quot;&gt;|&lt;&#x2F;span&gt; mods &lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;-&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;-&lt;&#x2F;span&gt;continue&lt;span class=&quot;z-keyword z-operator z-assignment z-powershell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-quoted z-double z-powershell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;New Exam&lt;span class=&quot;z-punctuation z-definition z-string z-end z-powershell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-other z-powershell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-powershell&quot;&gt;Invoke-Expression&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;retrospect&quot;&gt;Retrospect&lt;&#x2F;h4&gt;
+&lt;p&gt;Running the commandlet is now as easy as “continuing” the conversation with the previous context (the instructions) and piping it to PowerShell’s Invoke-Expression. Super easy!&lt;&#x2F;p&gt;
+&lt;p&gt;I actually have a lot of validation built into the commandlet. Like what if the exam is on a Saturday? Shouldn’t happen. What if the subject is only offered in grade 12 and a grade 10 student is taking it? Shouldn’t happen.&lt;&#x2F;p&gt;
+&lt;p&gt;I’m a little wonky about trusting validation to the mysterious &lt;em&gt;Latent Space&lt;&#x2F;em&gt;. Getting different answers to the same question asked twice makes me a little twitchy… But technically all of those validation rules could be applied at the prompt context level instead.&lt;&#x2F;p&gt;
+&lt;p&gt;Could this all be solved with a simple HTML form? Definitely! Yes.&lt;&#x2F;p&gt;
+&lt;p&gt;Should it? Mmhmm. Probably!&lt;&#x2F;p&gt;
+&lt;p&gt;As a general rule, if you want automation to produce consistently reliable outputs, you need consistently reliable inputs. AI “magics” away some of this, but it still requires some massaging and testing.&lt;&#x2F;p&gt;
+&lt;p&gt;In a situation like this, if a user form was not an option, it would be a great candidate for an AI flow in LangChain or Flowise. I’m hoping to take a look at these soon!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping Up&lt;&#x2F;h2&gt;
+&lt;p&gt;Mods is a great bridge between AI LLMs great demo of some cheap ad-hoc glue to try things out. Great for protyping, proof-of-concept, or ad-hoc formatting&#x2F;parsing&#x2F;sorting and the like. Perfect for someone like me who frequently gets caught up on the implementation details. With mods I can rapidly prototype in English, adjusting for desired behaviour with additional prompts. Once I’ve got a proof of concept, I can lay down something more solid.&lt;&#x2F;p&gt;
+&lt;p&gt;If an HTTP form This is actually a great use case for LangChain or Flowise. Hoping to take a look at these soon!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
