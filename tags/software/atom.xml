@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Software</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/software/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-01-22T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/software/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Obsidian Automated AI Voice Workflows</title>
+        <published>2025-01-22T00:00:00+00:00</published>
+        <updated>2025-01-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Caleb Trevatt
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/obsidian-ai-voice-notes/"/>
+        <id>https://calebtrevatt.com/blog/obsidian-ai-voice-notes/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/obsidian-ai-voice-notes/">&lt;h2 id=&quot;the-problem-thinking&quot;&gt;The Problem 🤔&lt;&#x2F;h2&gt;
+&lt;p&gt;For a long time, I’ve wanted the ability to record voice notes on the go and access them later as text.&lt;&#x2F;p&gt;
+&lt;p&gt;No, I’m not talking about simple dictation, I want something that cuts down on my distracted “umms”, “ahhs”, flight-of-ideas, and other incoherent vocalised nonsense as I drive like the incapable-of-multitasking man I am.&lt;&#x2F;p&gt;
+&lt;p&gt;For a while, I used &lt;a href=&quot;https:&#x2F;&#x2F;audiopen.ai&#x2F;&quot;&gt;AudioPen&lt;&#x2F;a&gt;, and it was pretty fantastic at condensing everything import into neat little summaries. The features have grown over the years, but I’m still a little wary of paying a subscription.&lt;&#x2F;p&gt;
+&lt;p&gt;I dreamed a little as I entertained the thought of building something out:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It would be open-source&lt;&#x2F;li&gt;
+&lt;li&gt;Ideally extendable&lt;&#x2F;li&gt;
+&lt;li&gt;Loosely-coupled to work with a multitude of tools&lt;&#x2F;li&gt;
+&lt;li&gt;What if it could run &lt;em&gt;&lt;strong&gt;any&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; workflow?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I couldn’t find anything like that yet…&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;So I started building my own thing, again.&lt;&#x2F;strong&gt;
+(As if I didn’t start enough projects over my parental leave break 🤦‍♂️👶)&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-idea-bulb&quot;&gt;The Idea 💡&lt;&#x2F;h2&gt;
+&lt;p&gt;And so &lt;em&gt;&lt;strong&gt;ThinkAloud.md&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; was born!&lt;&#x2F;p&gt;
+&lt;p&gt;(And at time of writing, is very much still a baby)&lt;&#x2F;p&gt;
+&lt;p&gt;🫱 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in03&#x2F;ThinkAloud&quot;&gt;Check it out!&lt;&#x2F;a&gt; 🫲&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s the gist:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Audio Recording&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilise Obsidian’s built-in audio recording feature to capture voice notes directly within the app.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Git Sync Backend&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;using &lt;code&gt;fit&lt;&#x2F;code&gt; or &lt;code&gt;git&lt;&#x2F;code&gt; extensions for Obisidian, git push is triggered to GitHub.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Actions Workflow&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The push initiates a GitHub Actions workflow that processes the new voice note.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Speech-to-Text Conversion&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The workflow sends the audio file to AssemblyAI’s API for transcription.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Content Parsing and Formatting&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assembly AI’s LeMUR parses the transcribed text to extract metadata and formats the content according to predefined templates.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Text-to-Speech (Optional)&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If specified in the template, the content is sent to Eleven Labs AI for voice synthesis.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update Obsidian Note&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The processed content is fed back into the original note containing the voice recording.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;the-doing-it-runner&quot;&gt;The Doing It 🏃&lt;&#x2F;h2&gt;
+&lt;p&gt;Granted, it’s a little async… I’m a bit worried that it’ll be too slow. But it’s very powerful. Anything that can run in a GitHub workflow can influence what ends up in the notes.&lt;&#x2F;p&gt;
+&lt;p&gt;My personal uses cases are pretty much all while I’m commuting. I like to “think out” long form ideas on-the-go and review my notes quite a bit later, so granted the CI&#x2F;CD workflow doesn’t fail, it should be fine for me.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’re after similar and are happy with less flexibility, I’d recommend AudioPen or Obsidian Scribe.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-templates-fork-knife-plate&quot;&gt;The Templates 🍽️&lt;&#x2F;h2&gt;
+&lt;p&gt;Templates guide LeMUR and Eleven Labs AI in processing and formatting the content. Here’s an example of a “journal entry” template:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown z-code&quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-separator z-thematic-break z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-thematic-break z-markdown&quot;&gt;---&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;author: {{ Author }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;date: {{ Date }} 
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;tags: journal, diary, log
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;match_phrase: captains log
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;process_stt: ready
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;process_tts: ready 
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-2 z-setext z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-setext z-markdown&quot;&gt;---&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-1 z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-begin z-markdown&quot;&gt;#&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-markup z-heading z-1 z-markdown&quot;&gt;&lt;span class=&quot;z-entity z-name z-section z-markdown&quot;&gt;{{ Title }}&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-whitespace z-newline z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-begin z-markdown&quot;&gt;##&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-entity z-name z-section z-markdown&quot;&gt;In a Nutshell&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-whitespace z-newline z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-italic z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-italic z-begin z-markdown&quot;&gt;*&lt;&#x2F;span&gt;Today I was feeling...&lt;span class=&quot;z-punctuation z-definition z-italic z-end z-markdown&quot;&gt;*&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;{{ Tone&#x2F;Emotion, 3 lines }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-bold z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-bold z-begin z-markdown&quot;&gt;**&lt;&#x2F;span&gt;Context&lt;span class=&quot;z-punctuation z-definition z-bold z-end z-markdown&quot;&gt;**&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;: {{ Context. When, where, etc. 50 words }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;{{ Provide a synopsis on the journal entry, roughly a paragraph }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-begin z-markdown&quot;&gt;##&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-entity z-name z-section z-markdown&quot;&gt;Key points&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-whitespace z-newline z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;{{ Key points, 3 - 5 }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-begin z-markdown&quot;&gt;##&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-entity z-name z-section z-markdown&quot;&gt;Full text&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-whitespace z-newline z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;{{ Provide verbatim transcript lightly cleaned up: &amp;quot;umms&amp;quot;, &amp;quot;ahhs&amp;quot;, stutters, grammatical mistakes removed etc. }}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;In a nutshell, the syntax is pretty much this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;markdown&quot; class=&quot;language-markdown z-code&quot;&gt;&lt;code class=&quot;language-markdown&quot; data-lang=&quot;markdown&quot;&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;I am a &lt;span class=&quot;z-markup z-bold z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-bold z-begin z-markdown&quot;&gt;**&lt;&#x2F;span&gt;static&lt;span class=&quot;z-punctuation z-definition z-bold z-end z-markdown&quot;&gt;**&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-markup z-strikethrough z-markdown-gfm&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-strikethrough z-begin z-markdown&quot;&gt;~~&lt;&#x2F;span&gt;potato&lt;span class=&quot;z-punctuation z-definition z-strikethrough z-end z-markdown&quot;&gt;~~&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-markup z-italic z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-italic z-begin z-markdown&quot;&gt;*&lt;&#x2F;span&gt;markdown&lt;span class=&quot;z-punctuation z-definition z-italic z-end z-markdown&quot;&gt;*&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; string, I will be completely ignored by the LLM for context&amp;#39;s sake.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-block-level z-markdown&quot;&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-heading z-begin z-markdown&quot;&gt;##&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-markup z-heading z-2 z-markdown&quot;&gt;&lt;span class=&quot;z-entity z-name z-section z-markdown&quot;&gt;Big Ol&amp;#39; MD Heading&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-whitespace z-newline z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;{{ I am a placeholder string. Put instructions in me for the LLM to follow}}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-html z-markdown&quot;&gt;&lt;span class=&quot;z-meta z-paragraph z-markdown&quot;&gt;&#x2F;&#x2F; I am a comment. I will be stripped out of the final output.
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;Not really sure about the comment syntax. Markdown is funny with comments. They’re not really part of the “spec”.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;the-power-zap&quot;&gt;The Power ⚡️&lt;&#x2F;h2&gt;
+&lt;p&gt;Since the templates are processed by a GPT, you can get really creative 🎨 You can even chain further workflows to automate further:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Clean up ad-lib artefacts&lt;&#x2F;strong&gt;: “umms” and “ahhs”,
+mistakes, stutters, silences.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Re-record&lt;&#x2F;strong&gt;: Swap your noisy car voice-note with a professional studio-quality voice-over using &lt;a href=&quot;https:&#x2F;&#x2F;elevenlabs.io&#x2F;&quot;&gt;ElevenLabs&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Speaker diarisation&lt;&#x2F;strong&gt;: Title each reader uniquely for conversational dialogue, like for a podcast.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Journal&lt;&#x2F;strong&gt;: Summarise your whole day as a structured journal entry with time and place context, emotional analysis, key points, etc.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Populate Dataviews&lt;&#x2F;strong&gt;: Populate Obsidian dataview fields, autofill tables, queries and kick-off Javascript tasks.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Integrate with Workflow&lt;&#x2F;strong&gt;: &lt;a href=&quot;https:&#x2F;&#x2F;n8n.io&#x2F;&quot;&gt;n8n&lt;&#x2F;a&gt; workflows.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Blogging&lt;&#x2F;strong&gt;: Create draft posts that match the structure and tone of your personal blog, or even publish directly to GitHub pages afterwards.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Social Cross-Posting&lt;&#x2F;strong&gt;: Publish to multiple social media platforms at once, respecting their various algorithms.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;BYD&lt;&#x2F;strong&gt;: Generate and publish proof-of-concept apps from spur-of-the-moment app ideas.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;existing-solutions&quot;&gt;Existing Solutions&lt;&#x2F;h2&gt;
+&lt;p&gt;While developing this workflow, I explored existing plugins that offer similar functionalities:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vincentbavitz&#x2F;obsidian-vox&quot;&gt;Obsidian Vox&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically transcribes audio notes, extracting metadata, categories, and tags.&lt;&#x2F;li&gt;
+&lt;li&gt;Frontmatter and verbatim text only, no templating or workflows.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;djmango&#x2F;obsidian-transcription&quot;&gt;Obsidian Transcription&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creates high-quality text transcriptions from media files using OpenAI’s Whisper.&lt;&#x2F;li&gt;
+&lt;li&gt;Verbatim text only, no templating or workflows.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Mikodin&#x2F;obsidian-scribe&quot;&gt;Obsidian Scribe&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Records voice notes, transcribes, summarises, and enriches them with AI.&lt;&#x2F;li&gt;
+&lt;li&gt;Ask questions mid recording, automatically filled in.&lt;&#x2F;li&gt;
+&lt;li&gt;Still no workflows.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These plugins offer valuable features, and I could have settled with Vox or Scribe. But while I really enjoy Obsidian, I love the idea of being able to use this for any markdown notes, anywhere.&lt;&#x2F;p&gt;
+&lt;p&gt;Better yet is the flexibility of being able to kick off all sorts of actions with CI&#x2F;CD workflows!&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Stay tuned for updates as this project progresses! ✨&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

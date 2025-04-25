@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Journal</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/journal/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-01-15T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/journal/atom.xml</id>
+    <entry xml:lang="en">
+        <title>TLP - Proposing a Novel and Deranged To-Do List Protocol</title>
+        <published>2025-01-15T00:00:00+00:00</published>
+        <updated>2025-01-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Caleb Trevatt
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/introducing-tlp/"/>
+        <id>https://calebtrevatt.com/blog/introducing-tlp/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/introducing-tlp/">&lt;h2 id=&quot;elevator-pitch&quot;&gt;Elevator Pitch&lt;&#x2F;h2&gt;
+&lt;p&gt;In a world built on innovation, efficiency, and performance, &lt;strong&gt;TLP&lt;&#x2F;strong&gt;—&lt;strong&gt;To-Do List Protocol&lt;&#x2F;strong&gt; stands out…&lt;&#x2F;p&gt;
+&lt;p&gt;For years, to-do list apps have been little more than demos for new front-end frameworks or hyperscaler spyware masquerading as productivity tools. TLP flips the script:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Compatible and Flexible&lt;&#x2F;strong&gt;: Adapters are on the roadmap to support several popular to-do apps. MIT license and a rainy day means you can support any to-do app you like.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Secure by Design&lt;&#x2F;strong&gt;: By funnelling encrypted packets through your to-do list, you’re holding a funhouse mirror up to hyperscaler data collection. If they’re going to harvest our data, let’s make them work for it.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Feel Productive Again&lt;&#x2F;strong&gt;: TLP doesn’t break your tasks. Your app stays functional! Your personal tasks will be ignored and treated as corrupt packets. With hundreds of tasks being added and completed every second, you can check “dopamine” off your list.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;TLP is a groundbreaking, TCP-inspired messaging protocol that operates through to-do lists. Yes, you read that correctly. Your humble to-do list app has been granted super-powers: unnecessary partial re-implementation of the transport layer at the application layer!&lt;&#x2F;p&gt;
+&lt;p&gt;TLP is pure joy (and pure overhead).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Checkout the project &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in03&#x2F;TLP&#x2F;tree&#x2F;main&quot;&gt;here&lt;&#x2F;a&gt;!&lt;&#x2F;strong&gt; 🚀&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-is-tlp&quot;&gt;What Is TLP?&lt;&#x2F;h2&gt;
+&lt;p&gt;TLP is a satirical, semi-functional messaging protocol inspired by TCP that uses popular to-do list applications as the transport backbone.&lt;&#x2F;p&gt;
+&lt;p&gt;Packets are sent as to-do list tasks, ordered by due date and marked as complete when received. Everything is updated in real-time to simulate the mechanics of data packets traversing a network.&lt;&#x2F;p&gt;
+&lt;p&gt;Mix in some disruptive hypey buzz tech, some pseudo-encryption, and we have a winner! Think of it as the most inefficient way to communicate securely with your friends while simultaneously overwhelming your to-do app.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-does-it-work&quot;&gt;How Does It Work?&lt;&#x2F;h2&gt;
+&lt;p&gt;TLP is TCP inspired. It maps TCP packet fields to stock-standard to-do list task fields.&lt;&#x2F;p&gt;
+&lt;blockquote class=&quot;tip&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
+	&lt;p&gt;Want to learn more about the anatomy of a TCP packet?
+Check out this &lt;a href=&quot;https:&#x2F;&#x2F;www.geeksforgeeks.org&#x2F;tcp-ip-packet-format&#x2F;&quot;&gt;GeeksForGeeks article&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;strong&gt;TCP Packet Field&lt;&#x2F;strong&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;strong&gt;To-Do Attribute&lt;&#x2F;strong&gt;&lt;&#x2F;th&gt;&lt;th&gt;&lt;strong&gt;Description&lt;&#x2F;strong&gt;&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Source Port&lt;&#x2F;td&gt;&lt;td&gt;Task Owner&lt;&#x2F;td&gt;&lt;td&gt;Represents the individual or entity initiating the task.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Destination Port&lt;&#x2F;td&gt;&lt;td&gt;Assigned User&lt;&#x2F;td&gt;&lt;td&gt;Indicates the person responsible for completing the task.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Sequence Number&lt;&#x2F;td&gt;&lt;td&gt;Task Due Date&lt;&#x2F;td&gt;&lt;td&gt;Encode sequence number in task due date to denote its order in a series&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Acknowledgment Number&lt;&#x2F;td&gt;&lt;td&gt;Task Dependencies&lt;&#x2F;td&gt;&lt;td&gt;Last received task as checked first checklist item, next expected task as unchecked following checklist item.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;del&gt;Data Offset&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;N&#x2F;A&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;Data offset (or header length) doesn’t require re-implementation to retain expected behaviour.&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;del&gt;Reserved&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;N&#x2F;A&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;Reserved fields are placeholders without direct relevance to task attributes and can be excluded.&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: URG&lt;&#x2F;td&gt;&lt;td&gt;Task Priority (High)&lt;&#x2F;td&gt;&lt;td&gt;Set the task’s priority level to ‘High’ to indicate urgency.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: ACK&lt;&#x2F;td&gt;&lt;td&gt;Task Completion Status&lt;&#x2F;td&gt;&lt;td&gt;Mark the task as complete to signify acknowledgment.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: PSH&lt;&#x2F;td&gt;&lt;td&gt;Task Priority (Important)&lt;&#x2F;td&gt;&lt;td&gt;Set the task’s priority level as ‘High’ to indicate PSH flag&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: RST&lt;&#x2F;td&gt;&lt;td&gt;Task Reassignment&lt;&#x2F;td&gt;&lt;td&gt;Reassign the task to a different user to indicate a reset in responsibility.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: SYN&lt;&#x2F;td&gt;&lt;td&gt;Task Coordination&lt;&#x2F;td&gt;&lt;td&gt;Add a checklist within the task for steps that require synchronization with others.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Flag: FIN&lt;&#x2F;td&gt;&lt;td&gt;Task Closure&lt;&#x2F;td&gt;&lt;td&gt;Upon task completion, archive or remove the task to signify it’s finished.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Window Size&lt;&#x2F;td&gt;&lt;td&gt;Todo List&lt;&#x2F;td&gt;&lt;td&gt;Group related tasks into a single list to represent the batch size.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Checksum&lt;&#x2F;td&gt;&lt;td&gt;Task Review&lt;&#x2F;td&gt;&lt;td&gt;Include a final checklist item for reviewing the task to ensure accuracy before completion.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Urgent Pointer&lt;&#x2F;td&gt;&lt;td&gt;Task Priority Indicator&lt;&#x2F;td&gt;&lt;td&gt;Use the task’s priority setting to indicate urgency.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Options&lt;&#x2F;td&gt;&lt;td&gt;Task Notes frontmatter&lt;&#x2F;td&gt;&lt;td&gt;Include any extra instructions or information in the task’s notes as plaintext frontmatter.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;del&gt;Padding&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;N&#x2F;A&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;del&gt;Padding is used for alignment in data structures and doesn’t translate to task attributes; it can be omitted.&lt;&#x2F;del&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Data (Payload)&lt;&#x2F;td&gt;&lt;td&gt;Task Notes&lt;&#x2F;td&gt;&lt;td&gt;Encrypted message as payload in task notes.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;multicast&quot;&gt;Multicast??&lt;&#x2F;h2&gt;
+&lt;p&gt;While multicast is usually out of TCP territory, TLP leans heavily on the Application Layer and implements multicast.
+If unicast, tasks are assigned to an individual. If multicast, the tasks are unassigned and all who are scoped receive the task.
+Packet acknowledgement then becomes a race-condition. An exciting little competion in an otherwise very cooperative standard.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;what-s-next-for-tlp&quot;&gt;What’s Next for TLP?&lt;&#x2F;h2&gt;
+&lt;p&gt;In the coming posts, we’ll explore more of TLP’s tech spec and dream about the necessary components to get it off the ground, including, maybe:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;“Adapters” to interface TLP 🔌🔀 with popular to-do list apps.&lt;&#x2F;li&gt;
+&lt;li&gt;Finding the Unicorn 🦄✨ of high-throughput to-do list apps.&lt;&#x2F;li&gt;
+&lt;li&gt;Overengineered blockchain integration 🧱⛓️ for authentication workflow.&lt;&#x2F;li&gt;
+&lt;li&gt;Different methods&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;join-the-revolution&quot;&gt;Join the Revolution&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;To-Do List Protocol&lt;&#x2F;strong&gt; is a call to action. It’s a powerful reminder of what an industry shake-up can do. Do you know how diffusion based generative models work? The same way high school art assignments work. They throw something random at the canvas, interpret the results and learn from their mistakes.&lt;&#x2F;p&gt;
+&lt;p&gt;Join us! Don’t chase the money. stop following the cues. Subvert the status quo.&lt;&#x2F;p&gt;
+&lt;p&gt;Joiin us for the next installment of the &lt;strong&gt;TLP Blog Series&lt;&#x2F;strong&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in03&#x2F;TLP&#x2F;tree&#x2F;main&quot;&gt;Explore TLP on GitHub&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;&lt;em&gt;Stay productive. Stay creative.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Two Types of Programmers</title>
+        <published>2025-01-11T00:00:00+00:00</published>
+        <updated>2025-01-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Caleb Trevatt
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/two-types-of-programmers/"/>
+        <id>https://calebtrevatt.com/blog/two-types-of-programmers/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/two-types-of-programmers/">&lt;p&gt;&lt;em&gt;&lt;strong&gt;You’re not bad at programming; you’re bad at unrealistic expectations.&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-og-goal-posts&quot;&gt;The OG Goal Posts&lt;&#x2F;h2&gt;
+&lt;p&gt;I used to think a “good programmer” looked like this:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Polyglots, fluent in so many languages that picking up a new one is child’s play.&lt;&#x2F;li&gt;
+&lt;li&gt;Masters of their craft, able to build anything from scratch effortlessly.&lt;&#x2F;li&gt;
+&lt;li&gt;The kind of people who reinvent the wheel for fun—writing an operating system, a compiler, or even an assembler from the ground up.&lt;&#x2F;li&gt;
+&lt;li&gt;Leaders of massive open-source projects, boasting 20k+ GitHub stars.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;How do you feel about that list? Are you a “good programmer”?&lt;&#x2F;p&gt;
+&lt;p&gt;If you’re like me, the answer is no. Here’s what changed my mind.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-two-archetypes&quot;&gt;The Two Archetypes&lt;&#x2F;h2&gt;
+&lt;p&gt;I watched a video recently by &lt;em&gt;Coding with Lewis&lt;&#x2F;em&gt; called &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lg1inngHGqQ&quot;&gt;“The 2 Types of Programmers”&lt;&#x2F;a&gt;. In it, Lewis suggests there are two programmer archetypes: &lt;strong&gt;craft-based&lt;&#x2F;strong&gt; and &lt;strong&gt;result-based&lt;&#x2F;strong&gt; programmers.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;craft-based-programmers&quot;&gt;&lt;strong&gt;Craft-Based Programmers&lt;&#x2F;strong&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prioritise code quality, maintainability, and optimal solutions.&lt;&#x2F;li&gt;
+&lt;li&gt;Often serve as open-source maintainers and code reviewers.&lt;&#x2F;li&gt;
+&lt;li&gt;Go the extra mile to implement their own solutions rather than rely on existing tools.&lt;&#x2F;li&gt;
+&lt;li&gt;Are deeply passionate about the &lt;em&gt;art&lt;&#x2F;em&gt; of programming.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;&#x2F;strong&gt;: Linus Torvalds, known for his perfectionism and attention to detail.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;result-based-programmers&quot;&gt;&lt;strong&gt;Result-Based Programmers&lt;&#x2F;strong&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on speed and the final product.&lt;&#x2F;li&gt;
+&lt;li&gt;Frequently work in start-ups or as content creators.&lt;&#x2F;li&gt;
+&lt;li&gt;Embrace existing tools and solutions to accelerate progress.&lt;&#x2F;li&gt;
+&lt;li&gt;Are driven by what the program enables or creates.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;&#x2F;strong&gt;: Mark Zuckerberg, known for his “move fast and break things” philosophy.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote class=&quot;important&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Important&lt;&#x2F;p&gt;
+	&lt;p&gt;If you haven’t seen the video, go show &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lg1inngHGqQ&quot;&gt;&lt;em&gt;@CodingWithLewis&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; some ❤️&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-revelation&quot;&gt;The Revelation&lt;&#x2F;h2&gt;
+&lt;p&gt;Listening to Lewis, something clicked for me. I realised my definition of a “good programmer” was entirely based on the craft-based archetype. But the other half of the spectrum—result-based programmers—is just as valid.&lt;&#x2F;p&gt;
+&lt;p&gt;Looking at the two lists, I’ve never been a craft-based programmer, and truthfully, I don’t want to be. It’s not how I’m wired. I’ve always been drawn to the magic of results—seeing a program come to life and watching it solve real problems. That’s what makes me excited to code.&lt;&#x2F;p&gt;
+&lt;p&gt;I realise now that I’ve had impostor syndrome holding me back. I’ve been overcautious. I thought I had to fit into a mould that didn’t suit me. I tiptoed around projects, overthinking my choices and hesitating to jump in. Whatever I chose felt like a major investment: I’d need to master it, build my 10-year BDFL project on it, contribute upstream— that sort of thing.&lt;&#x2F;p&gt;
+&lt;p&gt;But knowing there’s a whole world of successful programmers who think how I do? That really reset my goalposts. I don’t need to rewire my brain to be what I’m not. It’s liberating. I feel validated, encouraged, and motivated to keep going—on &lt;em&gt;my&lt;&#x2F;em&gt; terms.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;the-key-to-joy-in-programming&quot;&gt;The Key to Joy in Programming&lt;&#x2F;h2&gt;
+&lt;p&gt;Interestingly, I still have craft-based inclinations, but when I lean into them too much, I find myself working in my weaknesses: premature optimisation, brittle abstractions, stuck reinventing wheels for a car I later realise I don’t really want. Beyond a certain depth, I lose sight of the magic and stop having fun.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead, my strengths come alive when I focus on the result: exploring, building, and deploying new tools and technologies; immersing myself in the melting-pot marketplace of open source, where people exchange code and comments as both developers and users. That’s where I find joy—that’s where I see the magic.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;so-here-s-my-takeaway-for-you&quot;&gt;&lt;strong&gt;So, here’s my takeaway for you:&lt;&#x2F;strong&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Look at the two archetypes. Which traits resonate with you? What brings you joy in programming? Have you had your own narrow definition holding you back?&lt;&#x2F;p&gt;
+&lt;p&gt;At the end of the day, the best programmers are the ones who find joy in their work and play to their strengths.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;You’re not a bad programmer. You’re just you—and that’s plenty.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And just for fun…&lt;&#x2F;p&gt;
+&lt;iframe src=&quot;.&#x2F;slider.html&quot; height=550&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Remember…
+&lt;div class=&quot;crt scanlines&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                                             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt; _____     _                        _        _       _             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|     |___| |_ ___    ___ ___ ___ _| |   ___| |_ ___|_|___ ___ ___ 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;| | | | .&amp;#39;| &amp;#39;_| -_|  | . | . | . | . |  |  _|   | . | |  _| -_|_ -|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|_|_|_|__,|_,_|___|  |_  |___|___|___|  |___|_|_|___|_|___|___|___|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                     |___|                                         
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+
+&lt;&#x2F;div&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I think I might suck at blogging...</title>
+        <published>2024-12-07T00:00:00+00:00</published>
+        <updated>2024-12-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Caleb Trevatt
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/how-to-blog/"/>
+        <id>https://calebtrevatt.com/blog/how-to-blog/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/how-to-blog/">&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;I changed my theme recently. I actually changed my whole website. I was wrestling with some build issues in Hugo, so I switched to Zola. So far, so good.&lt;&#x2F;p&gt;
+&lt;p&gt;In porting my old posts, I realised they were &lt;strong&gt;Very Poor Quality&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I was a bit disappointed to find out how much even I didn’t want to read these posts 6 months later.
+Clearly I needed to work on this if I was going to ramp it up again. So, like many of modern first-world problems, I took it to ChatGPT with a kind of hopeful curiousity it would give me a magic solution:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“I’ve tried to get into blogging, but whenever I start, the blog post gets way too big, the meaning gets mushy and even I wouldn’t want to read it. I’ve got three or four so far and they’re all enormous and &lt;strong&gt;really boring&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;They also take a huge amount of effort. And my post frequency has gone way down because of it. I guess that’s becayse I’ve started dreading doing it.&lt;&#x2F;p&gt;
+&lt;p&gt;I want my posts to be meaningful. First and foremost to me. I want my blogging to be an extension of my note taking, but be the really important or useful&#x2F;thoughtful stuff that helps others, or stuff I really want to highlight to myself so I don’t forget.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;How do I blog better?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Help me, Obi-Wan Kenobi. You’re my only hope.&lt;&#x2F;del&gt;“&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;the-solution&quot;&gt;The Solution&lt;&#x2F;h1&gt;
+&lt;p&gt;Thus, the Oracle responded:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“It sounds like you’re caught in the common trap of over-ambition when blogging, where the desire for perfection or depth makes the process unwieldy and unenjoyable. Here’s a framework to help you blog better”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;a-better-blogging-framework&quot;&gt;A Better Blogging Framework&lt;&#x2F;h2&gt;
+&lt;p&gt;It sounds like you’re caught in the common trap of over-ambition when blogging, where the desire for perfection or depth makes the process unwieldy and unenjoyable. Here’s a framework to help you blog better:&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;1-redefine-what-meaningful-means-thought-balloon&quot;&gt;1. Redefine What “Meaningful” Means 💭&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A post doesn’t have to be exhaustive to be meaningful. Focus on &lt;strong&gt;one insight, idea, or question per post&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Your blog can serve as &lt;strong&gt;“working thoughts”&lt;&#x2F;strong&gt; rather than finished masterpieces. Treat it as an ongoing conversation with yourself and your readers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Definitely struggled with this one. I would start a post, and then think “well, I should probably expand on this, or add this, or include that…” and then I’d end up with a massive post that didn’t really adhere to the idea I wanted to share. It would just become a preachy jumble of thoughts.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;2-start-small-and-specific-memo&quot;&gt;2. Start Small and Specific 📝&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Break your ideas into smaller pieces.&lt;&#x2F;strong&gt; If your draft is massive, split it into a series of posts. For example:
+&lt;ul&gt;
+&lt;li&gt;Post 1: The problem or context.&lt;&#x2F;li&gt;
+&lt;li&gt;Post 2: An insight or solution.&lt;&#x2F;li&gt;
+&lt;li&gt;Post 3: Reflection or practical application.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Agree 👍 I think if I can exercise #1 properly, I won’t actually need to do this often. Unless it’s a great topic worth a lot of conversation.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;3-write-for-your-past-self-child-arrow-left&quot;&gt;3. Write for Your Past Self 🧒 ⬅️&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Imagine you’re writing to help a version of yourself from 6-12 months ago. This will:
+&lt;ul&gt;
+&lt;li&gt;Sharpen your focus.&lt;&#x2F;li&gt;
+&lt;li&gt;Keep the content relatable and actionable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Interesting. I took the popularity of the &lt;em&gt;Learning in Public&lt;&#x2F;em&gt; movement as permission to write publicly as a non-expert, but I keep finding myself writing as if I &lt;em&gt;am&lt;&#x2F;em&gt; an expert. Maybe that’s an &lt;strong&gt;ego-check&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;4-use-templates-to-structure-posts-page-facing-up&quot;&gt;4. Use Templates to Structure Posts 📄&lt;&#x2F;h3&gt;
+&lt;p&gt;A template can help keep your writing concise and focused:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Hook&lt;&#x2F;strong&gt;: Why this topic matters (1-2 sentences).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Main Idea&lt;&#x2F;strong&gt;: What’s the core point you’re sharing?&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Supporting Points&lt;&#x2F;strong&gt;: 2-3 short paragraphs that back it up.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Reflection or Call to Action&lt;&#x2F;strong&gt;: What’s the takeaway? How can this help others or yourself in the future?&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’ve never done this. I’ve always just written. I’ll give it a shot.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;5-limit-writing-time-alarm-clock&quot;&gt;5. Limit Writing Time ⏰&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Set a timer for 30-60 minutes.&lt;&#x2F;strong&gt; Treat it as an experiment in speed and clarity.&lt;&#x2F;li&gt;
+&lt;li&gt;Publish after one or two edits. Imperfect but consistent posts are better than perfect ones that never happen.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I really like this idea. I’ve been getting into the Pomodoro Technique recently and I’m finding it really helps. This could be a healthy application of the same principles.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;6-treat-your-blog-like-a-curation-space-books&quot;&gt;6. Treat Your Blog Like a Curation Space 📚&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If a full blog post feels too heavy, share:
+&lt;ul&gt;
+&lt;li&gt;A key takeaway from a book or podcast.&lt;&#x2F;li&gt;
+&lt;li&gt;A solution to a problem you solved at work.&lt;&#x2F;li&gt;
+&lt;li&gt;A reflective “aha moment” in a few paragraphs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;These smaller posts still add value and showcase your thinking.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Really good idea.&lt;&#x2F;strong&gt; I’ve done that a little for social media (LinkedIn and Twitter) but I hadn’t practiced that with blogging.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;7-iterate-and-expand-later&quot;&gt;7. Iterate and Expand Later&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A blog post doesn’t have to be a final product. Treat it like a &lt;strong&gt;“version 1.0”&lt;&#x2F;strong&gt; that you can refine or expand over time.&lt;&#x2F;li&gt;
+&lt;li&gt;Link posts together, turning smaller pieces into a cohesive body of work.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;While I like the idea, I think I lack the discipline to practice it. I’ve mentioned things I want to cover at the end of previous posts, and then never got back to them. Maybe I’d rework this as #2. If I think it needs to be expanded, I’ll either make sure I’m really committed to finishing it or I’ll draft the post and split it up once the whole series is finished.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;8-write-what-you-d-want-to-read&quot;&gt;8. Write What You’d Want to Read&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use bullet points, bold headings, and concise sentences.&lt;&#x2F;strong&gt; These make posts more readable and less intimidating to write.&lt;&#x2F;li&gt;
+&lt;li&gt;Ask yourself: “If I stumbled upon this, would I read it?”&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Definitely have not been doing that. Clearly 😂&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;9-use-feedback-loops&quot;&gt;9. Use Feedback Loops&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Share drafts with trusted peers or mentors for feedback. Their perspective can help you identify mushy sections.&lt;&#x2F;li&gt;
+&lt;li&gt;Analytics can also reveal which posts resonate most.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;👍&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;10-remember-blogging-is-practice&quot;&gt;10. Remember: Blogging Is Practice&lt;&#x2F;h3&gt;
+&lt;p&gt;Every post improves your ability to communicate ideas effectively. Even “boring” or “imperfect” ones are a step forward.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🤗&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h3 id=&quot;next-steps&quot;&gt;Next Steps&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose one of your &lt;del&gt;massive drafts&lt;&#x2F;del&gt; junky old posts. Extract a single idea and rewrite it using the template above.&lt;&#x2F;li&gt;
+&lt;li&gt;Publish it quickly. Don’t overthink it.&lt;&#x2F;li&gt;
+&lt;li&gt;Commit to a smaller post for your next one to build momentum.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;By focusing on these practices, you’ll find blogging more manageable and rewarding while steadily building a meaningful portfolio of posts that reflect your growth.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;&#x2F;h1&gt;
+&lt;p&gt;I doubt you’re reading this because you want &lt;em&gt;my&lt;&#x2F;em&gt; thoughts on blogging.
+If you wanted help with blogging, you could have asked ChatGPT yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;You know that. I know that. So why did I write this at all?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;To keep me accountable.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I may not follow to the letter, but if it’s here amongst my other posts to keep me in check.&lt;&#x2F;p&gt;
+&lt;div class=&quot;crt scanlines&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;Remember...
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                                             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt; _____     _                        _        _       _             
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|     |___| |_ ___    ___ ___ ___ _| |   ___| |_ ___|_|___ ___ ___ 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;| | | | .&amp;#39;| &amp;#39;_| -_|  | . | . | . | . |  |  _|   | . | |  _| -_|_ -|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;|_|_|_|__,|_,_|___|  |_  |___|___|___|  |___|_|_|___|_|___|___|___|
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;                     |___|                                         
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>

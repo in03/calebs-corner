@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Caleb Trevatt - Bash</title>
+      <link>https://calebtrevatt.com</link>
+      <description>A little corner of the internet where I write about things I&#x27;m learning.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://calebtrevatt.com/tags/bash/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Dock Tweaks</title>
+          <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+          <author>Caleb Trevatt</author>
+          <link>https://calebtrevatt.com/snippets/dock-adjustments/</link>
+          <guid>https://calebtrevatt.com/snippets/dock-adjustments/</guid>
+          <description xml:base="https://calebtrevatt.com/snippets/dock-adjustments/">&lt;h2 id=&quot;disable-dock-autohide-animation&quot;&gt;Disable Dock Autohide Animation&lt;&#x2F;h2&gt;
+&lt;p&gt;This tweak wins you back some screen real-estate and makes the dock feel snappier. Following the below makes the dock hidden by default even with non-fullscreened windows. On mouseover, the dock will unhide itself instantly with no animation.&lt;&#x2F;p&gt;
+&lt;video class=&quot;&quot; src=&quot;Dock-Animation.mov&quot;autoplay loop muted&gt;&lt;&#x2F;video&gt;
+&lt;blockquote class=&quot;tip&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Tip&lt;&#x2F;p&gt;
+	&lt;p&gt;These are my personal preferences.
+I spent a little time digging to get these settings, wrote this post and then found this &lt;strong&gt;immensely useful website&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;macos-defaults.com&#x2F;dock&#x2F;&quot;&gt;macOS-defaults.com&lt;&#x2F;a&gt;. Definitely go there for more info on defaults!&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Press &lt;kbd&gt;⌘&lt;&#x2F;kbd&gt; + &lt;kbd&gt;⌥&lt;&#x2F;kbd&gt; + &lt;kbd&gt;D&lt;&#x2F;kbd&gt; to enable autohide.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;defaults&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; write com.apple.dock autohide-time-modifier&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;float&lt;&#x2F;span&gt; 0&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;defaults&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; write com.apple.Dock autohide-delay&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;float&lt;&#x2F;span&gt; 0&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;killall&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; Dock&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can set those &lt;code&gt;-float&lt;&#x2F;code&gt; values as desired. 0 is instant.&lt;&#x2F;p&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;The dock will still have an activation “pressure” behaviour in fullscreen apps which can’t be configured.
+Workaround is to fit the window with double click instead of fullscreening.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;To revert, reset those adjustments with &lt;code&gt;delete&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;defaults&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; delete com.apple.dock autohide-time-modifier&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;defaults&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; delete com.apple.Dock autohide-delay&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;killall&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; Dock&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+    </channel>
+</rss>

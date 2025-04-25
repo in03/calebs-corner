@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Roadmap</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/roadmap/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-08T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/roadmap/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Could I be a Test Engineer?</title>
+        <published>2024-12-08T00:00:00+00:00</published>
+        <updated>2024-12-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Caleb Trevatt
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/you-are-here/"/>
+        <id>https://calebtrevatt.com/blog/you-are-here/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/you-are-here/">&lt;h1 id=&quot;could-i-be-a-test-engineer&quot;&gt;Could I be a Test Engineer?&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;This post is first of a planned series that explores the idea of leveraging AI to “try on” different careers.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Like many professionals, I’ve accumulated a broad and eclectic skillset but found myself wondering how to bridge gaps when exploring new opportunities. Using AI as a career co-pilot, I’ll share roadmaps tailored to roles I find fascinating, beginning with this post.&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s how I’m using AI:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Assess my compatibility with a role posted on LinkedIn.&lt;&#x2F;li&gt;
+&lt;li&gt;Create a roadmap of skills to bridge gaps in my knowledge.&lt;&#x2F;li&gt;
+&lt;li&gt;Generate a mermaid flowchart that visualises the roadmap.&lt;&#x2F;li&gt;
+&lt;li&gt;Tailor my resume and cover letter for the role (optional).&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;blockquote class=&quot;warning&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Warning&lt;&#x2F;p&gt;
+	&lt;p&gt;While AI can provide valuable insights and suggestions, it’s important to approach its career guidance with a critical mindset. AI models can have biases, make mistakes, or provide outdated information. Always verify AI-generated advice through:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Industry professionals&lt;&#x2F;li&gt;
+&lt;li&gt;Official documentation&lt;&#x2F;li&gt;
+&lt;li&gt;Recent job postings&lt;&#x2F;li&gt;
+&lt;li&gt;Professional communities&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This series demonstrates one way to use AI as a career exploration tool, but should not be your only source of guidance. Make informed decisions by combining AI insights with real-world research and networking.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;my-background&quot;&gt;My Background&lt;&#x2F;h2&gt;
+&lt;p&gt;I’ve always been passionate about technology. I got my first computer at 12. Its performance was shocking… Probably 10 years old when I got it. It barely ran XP, but I was determined to squeeze every last bit of juice out of it. My Dad had heard something about Linux in his sysadmin days and gave me a thick copy of a RedHat manual that was probably 10 years older than the computer. I read that thing late into the night and felt like I’d discovered a whole new world of computing.&lt;&#x2F;p&gt;
+&lt;p&gt;Before long I was running Ubuntu &lt;em&gt;Jaunty Jackalope&lt;&#x2F;em&gt; full time.
+My Dad was actually pretty proud of me. Proud enough he mentioned it in his speech at my wedding.&lt;&#x2F;p&gt;
+&lt;p&gt;Computers aside, I grew interested in photography, then videography, then film. I pursued film in high school and university, but the job market in my part of the world was oversaturated and underpaid. Instead, of Hollywood, I found myself working at a startup specialising in &lt;a href=&quot;https:&#x2F;&#x2F;uq.youtour.com.au&#x2F;&quot;&gt;virtual tours&lt;&#x2F;a&gt;. Unlike editing feature films, these virtual tours only ever went together in the intended order. I quickly discovered how automation could streamline the repetition. My automations became more advanced and I picked up AutoHotkey 🎹, Javascript ☕️ and Python 🐍 on the way.&lt;&#x2F;p&gt;
+&lt;p&gt;This spark led me to software development and later IT administration at a high school, managing Apple and Windows endpoints using Jamf, Intune, and SCCM.&lt;&#x2F;p&gt;
+&lt;p&gt;At time of writing, this is where I remain.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, with a growing family, I’m on the hunt for a remote-friendly role that offers better work-life balance and financial stability. While my eclectic background has rounded out my skills and made me a better problem-solver, it’s also left me with gaps that complicate job applications.&lt;&#x2F;p&gt;
+&lt;p&gt;So, I had this idea: what if I asked AI to help me bridge those gaps?&lt;&#x2F;p&gt;
+&lt;p&gt;That’s where this blog series comes in — to map out actionable steps for career transitions.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;test-engineer-an-overview&quot;&gt;Test Engineer: An Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;Test Engineers ensure the quality and functionality of software through systematic testing processes. They create and execute test plans, identify bugs, and collaborate with developers to improve software reliability. This role is ideal for detail-oriented individuals who enjoy problem-solving and optimizing systems.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;roadmap-to-becoming-a-test-engineer&quot;&gt;Roadmap to Becoming a Test Engineer&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;phase-1-foundations-of-software-testing&quot;&gt;Phase 1: Foundations of Software Testing&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;What to Learn:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Unit tests, integration tests, and regression tests: what they are and why they matter.&lt;&#x2F;li&gt;
+&lt;li&gt;The Software Development Lifecycle (SDLC) and the role of testing.&lt;&#x2F;li&gt;
+&lt;li&gt;Python’s &lt;code&gt;unittest&lt;&#x2F;code&gt; module to write basic tests.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;What to Do:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write unit tests for a small Python project.&lt;&#x2F;li&gt;
+&lt;li&gt;Practice Test-Driven Development (TDD) with simple scripts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;phase-2-tools-and-automation&quot;&gt;Phase 2: Tools and Automation&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;What to Learn:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Testing frameworks like &lt;code&gt;pytest&lt;&#x2F;code&gt; and &lt;code&gt;nose2&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;CI&#x2F;CD tools (e.g., GitLab CI&#x2F;CD) for automated testing.&lt;&#x2F;li&gt;
+&lt;li&gt;Writing shell scripts to integrate automated tests into workflows.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;What to Do:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up a GitLab repository with a CI&#x2F;CD pipeline that runs tests.&lt;&#x2F;li&gt;
+&lt;li&gt;Automate repetitive tasks like test deployments using scripts.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;phase-3-advanced-testing-techniques&quot;&gt;Phase 3: Advanced Testing Techniques&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;What to Learn:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shift-left testing: catching bugs early in the pipeline.&lt;&#x2F;li&gt;
+&lt;li&gt;Basics of performance and security testing.&lt;&#x2F;li&gt;
+&lt;li&gt;Setting up Dockerized testing environments.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;What to Do:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use Python tools like &lt;code&gt;responses&lt;&#x2F;code&gt; to mock APIs in integration tests.&lt;&#x2F;li&gt;
+&lt;li&gt;Test a Python web app’s performance with tools like Selenium or Locust.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;phase-4-collaboration-and-open-source&quot;&gt;Phase 4: Collaboration and Open Source&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;What to Learn:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation practices in collaborative testing environments.&lt;&#x2F;li&gt;
+&lt;li&gt;Quality assurance strategies in large projects.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;What to Do:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contribute to an open-source project by writing or improving test cases.&lt;&#x2F;li&gt;
+&lt;li&gt;Build a portfolio showcasing your contributions and testing expertise.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;visualizing-the-plan&quot;&gt;Visualizing the Plan&lt;&#x2F;h2&gt;
+&lt;p&gt;Here’s a roadmap of the above plan:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;mermaid&quot; class=&quot;language-mermaid z-code&quot;&gt;&lt;code class=&quot;language-mermaid&quot; data-lang=&quot;mermaid&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;graph LR
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  A[Foundations of Software Testing] --&amp;gt; B[Tools and Automation]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  B --&amp;gt; C[Advanced Testing Techniques]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  C --&amp;gt; D[Collaboration and Open Source]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  A --&amp;gt; E[SDLC &amp;amp; Testing Basics]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  E --&amp;gt; F[Unittest in Python]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  B --&amp;gt; G[CI&#x2F;CD Tools like GitLab]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  G --&amp;gt; H[Automation Scripts for Test Deployment]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  C --&amp;gt; I[Performance &amp;amp; Security Testing]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  I --&amp;gt; J[Dockerized Testing Environments]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  D --&amp;gt; K[Contribute to Open-Source Projects]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;  K --&amp;gt; L[Build Portfolio]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;&#x2F;h2&gt;
+&lt;p&gt;Embarking on a career transition can feel overwhelming, but breaking the journey into phases makes it manageable. By focusing on foundational knowledge, hands-on practice, and collaboration, anyone—including me—can work toward becoming a Test Engineer.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’ve walked this path or have resources to share, I’d love to hear your insights in the comments. Stay tuned for the next post in this series, where I’ll tackle another role with the help of AI!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

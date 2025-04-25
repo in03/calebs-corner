@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Caleb Trevatt - Javascript</title>
+      <link>https://calebtrevatt.com</link>
+      <description>A little corner of the internet where I write about things I&#x27;m learning.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://calebtrevatt.com/tags/javascript/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Aspect Ratio Calculator</title>
+          <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
+          <author>Caleb Trevatt</author>
+          <link>https://calebtrevatt.com/snippets/calculate-aspect-ratio/</link>
+          <guid>https://calebtrevatt.com/snippets/calculate-aspect-ratio/</guid>
+          <description xml:base="https://calebtrevatt.com/snippets/calculate-aspect-ratio/">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;&#x2F;h2&gt;
+&lt;p&gt;I threw this together for two reasons:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Aspect ratio is tedious to calculate by hand.&lt;&#x2F;li&gt;
+&lt;li&gt;I wanted to try using CodePen.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;tedium&quot;&gt;Tedium&lt;&#x2F;h3&gt;
+&lt;p&gt;To calculate aspect ratio, you need the Greatest Common Divisor (GCD). You can get this with the Euclidean algorithm, but doing this by hand or in a phone calculator is still slow and manual.&lt;&#x2F;p&gt;
+&lt;p&gt;You can side-step GCD by using &lt;code&gt;N:1&lt;&#x2F;code&gt; aspect ratio instead, e.g. “1.85:1”&lt;&#x2F;p&gt;
+&lt;p&gt;Just divide. &lt;code&gt;1920&#x2F;1080 == 1.85&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But unless you’re a cinephile, that’s not as common and probably not what you’re looking for.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;codepen&quot;&gt;CodePen&lt;&#x2F;h3&gt;
+&lt;p&gt;Anyway. Code to the rescue!&lt;&#x2F;p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;600&quot; data-default-tab=&quot;result&quot; data-slug-hash=&quot;wBvzWNW&quot; data-pen-title=&quot;Aspect Ratio Calculator&quot; data-user=&quot;in03&quot; style=&quot;height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;in03&#x2F;pen&#x2F;wBvzWNW&quot;&gt;
+  Aspect Ratio Calculator&lt;&#x2F;a&gt; by Caleb Trevatt (&lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;in03&quot;&gt;@in03&lt;&#x2F;a&gt;)
+  on &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&quot;&gt;CodePen&lt;&#x2F;a&gt;.&lt;&#x2F;span&gt;
+&lt;&#x2F;p&gt;
+&lt;script async src=&quot;https:&#x2F;&#x2F;public.codepenassets.com&#x2F;embed&#x2F;index.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;h2 id=&quot;how&quot;&gt;How?&lt;&#x2F;h2&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https:&#x2F;&#x2F;codepen.io&#x2F;in03&#x2F;pen&#x2F;wBvzWNW&quot;&gt;source code&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I initially did this in Python which was very easy with the function built into the standard library:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python z-code&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;z-source z-python&quot;&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-keyword z-control z-import z-from z-python&quot;&gt;from&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-meta z-import-source z-python&quot;&gt; &lt;span class=&quot;z-meta z-import-path z-python&quot;&gt;&lt;span class=&quot;z-meta z-import-name z-python&quot;&gt;math&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-keyword z-control z-import z-python&quot;&gt;import&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt; &lt;span class=&quot;z-meta z-generic-name z-python&quot;&gt;gcd&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then I wanted to publish it to my site, so I moved it to Javascript. Unfortunately JS doesn’t have a GCD function built in…&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-function z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-function z-ts&quot;&gt;function&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-definition z-function z-ts&quot;&gt;&lt;span class=&quot;z-entity z-name z-function z-ts&quot;&gt;gcd&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-parameters z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-begin z-ts&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-ts&quot;&gt;a&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-parameter z-ts&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-parameters z-end z-ts&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-block z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;{&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-function z-ts&quot;&gt;&lt;span class=&quot;z-meta z-block z-ts&quot;&gt;    &lt;span class=&quot;z-keyword z-control z-flow z-ts&quot;&gt;return&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;b&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-comparison z-ts&quot;&gt;===&lt;&#x2F;span&gt; &lt;span class=&quot;z-constant z-numeric z-decimal z-ts&quot;&gt;0&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-ternary z-ts&quot;&gt;?&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;a&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-ternary z-ts&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-ts&quot;&gt;&lt;span class=&quot;z-entity z-name z-function z-ts&quot;&gt;gcd&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brace z-round z-ts&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;a&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-arithmetic z-ts&quot;&gt;%&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;b&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brace z-round z-ts&quot;&gt;)&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-terminator z-statement z-ts&quot;&gt;;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-function z-ts&quot;&gt;&lt;span class=&quot;z-meta z-block z-ts&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-block z-ts&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This is a recursive function implementing the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Euclidean_algorithm&quot;&gt;Euclidean algorithm&lt;&#x2F;a&gt; to find the greatest common divisor of two numbers.&lt;&#x2F;p&gt;
+&lt;blockquote class=&quot;note&quot;&gt;
+	&lt;p class=&quot;alert-title&quot;&gt;
+		&lt;i class=&quot;icon&quot;&gt;&lt;&#x2F;i&gt;Note&lt;&#x2F;p&gt;
+	&lt;p&gt;If you’re unfamiliar with that questionmark &#x2F; colon syntax, that’s a &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Operators&#x2F;Conditional_operator&quot;&gt;&lt;code&gt;ternary operator&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.
+It’s essentially a one liner &lt;code&gt;if&#x2F;else&lt;&#x2F;code&gt; statement.&lt;&#x2F;p&gt;
+
+&lt;&#x2F;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;If &lt;code&gt;b&lt;&#x2F;code&gt; is &lt;code&gt;0&lt;&#x2F;code&gt;, it returns &lt;code&gt;a&lt;&#x2F;code&gt; (base case).&lt;&#x2F;li&gt;
+&lt;li&gt;Otherwise, it calls itself recursively with &lt;code&gt;b&lt;&#x2F;code&gt; and &lt;code&gt;a % b&lt;&#x2F;code&gt; until &lt;code&gt;b&lt;&#x2F;code&gt;becomes &lt;code&gt;0&lt;&#x2F;code&gt;, at which point &lt;code&gt;a&lt;&#x2F;code&gt; is the&lt;code&gt;GCD&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;javascript&quot; class=&quot;language-javascript z-code&quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;let&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;divisor&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-ts&quot;&gt;&lt;span class=&quot;z-entity z-name z-function z-ts&quot;&gt;gcd&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brace z-round z-ts&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;width&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-comma z-ts&quot;&gt;,&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;height&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-brace z-round z-ts&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-terminator z-statement z-ts&quot;&gt;;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;let&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;aspectWidth&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;width&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-arithmetic z-ts&quot;&gt;&#x2F;&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;divisor&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-terminator z-statement z-ts&quot;&gt;;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-ts&quot;&gt;&lt;span class=&quot;z-meta z-var z-expr z-ts&quot;&gt;&lt;span class=&quot;z-storage z-type z-ts&quot;&gt;let&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-var-single-variable z-expr z-ts&quot;&gt;&lt;span class=&quot;z-meta z-definition z-variable z-ts&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;aspectHeight&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-ts&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;height&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-arithmetic z-ts&quot;&gt;&#x2F;&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-ts&quot;&gt;divisor&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-terminator z-statement z-ts&quot;&gt;;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This finds the largest number that evenly divides both &lt;code&gt;width&lt;&#x2F;code&gt; and &lt;code&gt;height&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;notes-on-codepen&quot;&gt;Notes on CodePen&lt;&#x2F;h2&gt;
+&lt;p&gt;I heard an &lt;a href=&quot;https:&#x2F;&#x2F;changelog.com&#x2F;friends&#x2F;72&quot;&gt;episode of the Changelog recently&lt;&#x2F;a&gt; interviewing Chris Coyier and Dave Rupert.
+Chris Coyier is the founder of Codepen and talked a little bit about it. Some of the features sounded really interesting.
+I threw together this junky calculator and wondered briefly about embedding it straight into my site, but I thought I’d take the opportunity to give CodePen a whirl.&lt;&#x2F;p&gt;
+&lt;p&gt;I’d never actually written of my own in CodePen before, but I’ve messed around with it online when I’ve stumbled into the world of frontend demos and visual javascript experiments.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;some-key-points-no-one-asked-for&quot;&gt;Some Key Points No One Asked For&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Layout&lt;&#x2F;strong&gt;: Not a fan of the default view. I like the results on the right and the HTML, CSS, JS stacked on the left.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ducks in a row&lt;&#x2F;strong&gt;: Indentation seems quirky. Alignment always seems to overshoot on the first tab.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Brainrot&lt;&#x2F;strong&gt;: I was hankering for my IDE and AI code completion… Maybe more of a comment on me than CodePen.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Activation Energy&lt;&#x2F;strong&gt;: I wouldn’t have bothered with this if I had to start a git repo, create a project, spin up a web server, etc.
+How much learning have I missed because I haven’t throw together junky tools with rapid prototyping?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+    </channel>
+</rss>

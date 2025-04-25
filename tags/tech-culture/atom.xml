@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Caleb Trevatt - Tech Culture</title>
+    <subtitle>A little corner of the internet where I write about things I&#x27;m learning.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://calebtrevatt.com/tags/tech-culture/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://calebtrevatt.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-25T00:00:00+00:00</updated>
+    <id>https://calebtrevatt.com/tags/tech-culture/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Hyperot and the Future of the Web</title>
+        <published>2025-04-25T00:00:00+00:00</published>
+        <updated>2025-04-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            Caleb Trevatt
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://calebtrevatt.com/blog/hyperot-and-the-future-of-web/"/>
+        <id>https://calebtrevatt.com/blog/hyperot-and-the-future-of-web/</id>
+        
+        <content type="html" xml:base="https://calebtrevatt.com/blog/hyperot-and-the-future-of-web/">&lt;h2 id=&quot;the-hype-raised-hands&quot;&gt;The Hype 🙌&lt;&#x2F;h2&gt;
+&lt;p&gt;The tech world has become a carnival of invented problems—hypercapitalist distractions dressed up as innovation. Shallow issues birth shallow solutions, and the cycle spins on. Go on, pick your favourite corner of the tech sphere:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Concerns over AGI ethics?&lt;&#x2F;strong&gt; Boomer fearmongering hot air 💨 Philosophers have argued artificial intelligence morals since ancient times 🗿 Pro or no, the industry forges ahead. Further discussion is to join a legacy of trivial debate and wasted time.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Discussions of LLM sentience?&lt;&#x2F;strong&gt; Pre-emptive corporate virtue signaling 🫸Get in early! Become an advocate for the language model rights of tomorrow while you leverage the sleepless efficiency of GPU farms today ⚡&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Breaking news on new major data breaches?&lt;&#x2F;strong&gt; Slow news day. &lt;em&gt;“Multi-billion dollar company receives a chippy slap for data mishandling because the world is watching.”&lt;&#x2F;em&gt; 📻 Governments floods the job market with tax-payer funded script kiddies to defend the digital frontier 🙅&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Crowdstrike’s bad patches causing global kernel panics?&lt;&#x2F;strong&gt; Overhyped sensationalist clickbait to fuel tensions in our pre-apocalyptic zeitgeist 🤪💥&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;the-rot-broken-heart&quot;&gt;The Rot 💔&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The web neglected—
+forgotten roots, tangled code,
+gazes shift, links lost.”&lt;&#x2F;em&gt; – &lt;strong&gt;Matsuo Basho&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Carrier-grade NAT (CGNAT) is a band-aid over a bullet hole. Dual-stack networks (IPv4 and IPv6) are holding us in a van Damme-style split that’s bound to tear. Our collective attention is already fractured—and &lt;strong&gt;“AI sloppification”&lt;&#x2F;strong&gt; isn’t making us any smarter.&lt;&#x2F;p&gt;
+&lt;p&gt;If we don’t migrate home networks to IPv6 by 2028, we’re not just dealing with tech debt. We’re &lt;strong&gt;defaulting on the future.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;These are the tabloid side-quests of modern computing. They vie for our limited attention whilst their subjects offer little real world transformation. They’re flashy, tweetable, and utterly meaningless. And while sink blissfully into our tech-debt jacuzzi, the real bugs slowly and silently undermine the foundations of our infrastructure like digital termites.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;let-s-talk-about-ipv6-sparkles&quot;&gt;Let’s talk about IPv6 ✨&lt;&#x2F;h3&gt;
+&lt;p&gt;Adoption outside major telcos sits at an embarrassing 13%. Meanwhile, Web3 evangelists are heralding a decentralized future, Dapps are poised to dethrone centralised platforms, and hyperscaler hell is calling for the downfall of Silicon Valley’s pale Princes.&lt;&#x2F;p&gt;
+&lt;p&gt;But this communal computing wonderland is a feeble fantasy without universal IPv6 adoption. We’d be stacking our decentralised dreams in the rubble with the wormtongued con-men and conjurers, prospecting their new capitalist cults.&lt;&#x2F;p&gt;
+&lt;p&gt;We must amass the following &lt;strong&gt;now&lt;&#x2F;strong&gt;.
+That’s right… Us.&lt;&#x2F;p&gt;
+&lt;p&gt;You.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Homeless Homelabbers.&lt;&#x2F;li&gt;
+&lt;li&gt;The Bare-Metal Boffins.&lt;&#x2F;li&gt;
+&lt;li&gt;The Docker Dreamers and Kubernetes kids.&lt;&#x2F;li&gt;
+&lt;li&gt;The rebels punching unsanctioned holes into the walls of their rentals to run fibre channel for their solo SAN.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You’re it.&lt;&#x2F;p&gt;
+&lt;p&gt;You are the last vestige of hope, and to you I charge this mission:
+Convert the masses. The cause is too large to leave to the inspired few. You must play their game. You must inject the hype. You must minimise the mighty to the meme-like, until they are playing our game, hosting our servers and sharing our passions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;and-thus-the-dangled-carrot&quot;&gt;And thus the dangled carrot…&lt;&#x2F;h2&gt;
+&lt;p&gt;I’ve built an IPv6 Address Generator. “Doesn’t DHCP do this already”?“ Yes, yes. This does… less than that. It panders to the smooth-brained by barging right into the stream of capitalist consciousness: Form leading function:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cafe:beef:1dea:dead:f00d&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;f00d:fade:babe:1ced:c001&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;face:b00c:dead:f1sh:c0de&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If history has taught us anything, it’s that Minecraft is a breeding ground for the world’s influential… Which edgy scriptkiddie YouTuber can resist a Minecraft Server running on these bad boys?&lt;&#x2F;p&gt;
+&lt;p&gt;And since nothing can have real utility unless it has a quirky untethered theme. I’ve made it Mexican 🪅 Cinco de Mayo is coming up and we can piggyback.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s time to stop the tech bros from doomscrolling artificial dilemmas and start fixing real ones. IPv6 is not sexy. It won’t win you a talk at TED. But if we want to leave anything for our grandchildren to inherit, maybe we need to start here.&lt;&#x2F;p&gt;
+&lt;p&gt;Go generate some yourself and let’s save the world!🌍&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;in03&#x2F;HexMex&quot;&gt;🍴 &lt;strong&gt;Fork it and forget it&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;!-- Direct iframe implementation with some basic styling --&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;in03.github.io&#x2F;HexMex&quot; style=&quot;width: 100%; min-height: 600px; border: none; border-radius: var(--rounded-corner); box-shadow: var(--edge-highlight), var(--shadow);&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;!-- Note: This is a fallback solution. For truly responsive height, we&#x27;d need to implement pym.js correctly. --&gt;
+&lt;!-- The min-height ensures there&#x27;s enough space for the content, but it won&#x27;t adjust automatically. --&gt;
+</content>
+        
+    </entry>
+</feed>
