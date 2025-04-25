@@ -12,7 +12,7 @@ toc = true
 tags = ["Web", "Tech Culture", "Future", "IPv6"]
 +++
 
-## The Hyperot 🙌
+## The Hype 🙌
 
 The tech world has become a carnival of invented problems—hypercapitalist distractions dressed up as innovation. Shallow issues birth shallow solutions, and the cycle spins on. Go on, pick your favourite corner of the tech sphere:
 
@@ -24,7 +24,7 @@ The tech world has become a carnival of invented problems—hypercapitalist dist
 
 - **Crowdstrike's bad patches causing global kernel panics?** Overhyped sensationalist clickbait to fuel tensions in our pre-apocalyptic zeitgeist 🤪💥
 
-## The Heartache 💔
+## The Rot 💔
 
 > *"The web neglected—
 forgotten roots, tangled code,
